@@ -19,6 +19,7 @@ import time
 from pathlib import Path
 from datetime import datetime, timedelta
 from collections import defaultdict
+from urllib.parse import quote
 
 try:
     import requests
@@ -41,6 +42,7 @@ DATA_DIR = Path(__file__).parent / "data"
 RESPONSES_FILE = Path(__file__).parent / "responses.json"
 SCHEDULE_FILE = Path(__file__).parent / "schedule.json"
 USERS_FILE = Path(__file__).parent / "users.json"
+PROFILES_FILE = Path(__file__).parent / "profiles.json"
 NOTES_FILE = Path(__file__).parent / "community_notes.json"
 RESOLVED_FILE = Path(__file__).parent / "resolved.json"
 BOOKMARKS_FILE = Path(__file__).parent / "bookmarks.json"
@@ -1121,7 +1123,12 @@ def get_current_user():
 
     users = load_users()
     responses = load_responses()
-    known_names = sorted(set(list(users.keys()) + [r.get("user") for r in responses if r.get("user")]))
+    profiles = load_profiles()
+    known_names = sorted(set(
+        list(users.keys())
+        + list(profiles.keys())
+        + [r.get("user") for r in responses if r.get("user")]
+    ))
     at_capacity = len(known_names) >= MAX_USERS
 
     default_param = st.query_params.get("user", "")
@@ -1168,8 +1175,10 @@ def get_current_user():
 
     if st.button("Continue", type="primary", disabled=not (can_create and name.strip() and pin_ok)):
         clean = name.strip()
-        if choice == "Create new profile..." and set_pin and new_pin:
-            save_user_pin(clean, new_pin.strip())
+        if choice == "Create new profile...":
+            if set_pin and new_pin:
+                save_user_pin(clean, new_pin.strip())
+            _record_profile_milestone(clean, "profile_created")
         # Re-read every *.json file in data/ fresh on each login, rather than
         # trusting whatever this running process happened to cache. Data
         # files get added/edited directly on GitHub outside the app (e.g. a
@@ -1243,12 +1252,18 @@ def github_restore_if_needed():
     cfg = _github_config()
     if not cfg:
         return
-    for local_path, repo_path in _BACKUP_FILES:
+    restore_files = [
+        (PROFILES_FILE, "profiles.json"),
+        (RESPONSES_FILE, "responses.json"),
+    ] + _BACKUP_FILES
+    for local_path, repo_path in restore_files:
         if local_path.exists():
             continue
         try:
             url = f"https://api.github.com/repos/{cfg['repo']}/contents/{repo_path}"
-            resp = requests.get(url, headers=cfg["headers"], timeout=10)
+            resp = requests.get(
+                url, headers=cfg["headers"], params={"ref": "data"}, timeout=10
+            )
             if resp.status_code == 200:
                 content_b64 = resp.json().get("content", "").replace("\n", "")
                 content = base64.b64decode(content_b64).decode("utf-8")
@@ -1257,13 +1272,68 @@ def github_restore_if_needed():
             pass
 
 
-def _github_commit_file(local_path, repo_path, message):
+def _github_ensure_data_branch(cfg):
+    """Creates the data branch from the repository's default branch if needed."""
+    api_root = f"https://api.github.com/repos/{cfg['repo']}"
+    ref_url = f"{api_root}/git/ref/heads/data"
+    ref_resp = requests.get(ref_url, headers=cfg["headers"], timeout=10)
+    if ref_resp.status_code == 200:
+        return True, "Success"
+    if ref_resp.status_code != 404:
+        return False, f"GitHub API returned {ref_resp.status_code} while checking the data branch."
+
+    repo_resp = requests.get(api_root, headers=cfg["headers"], timeout=10)
+    if repo_resp.status_code != 200:
+        return False, f"GitHub API returned {repo_resp.status_code} while checking the default branch."
+    default_branch = repo_resp.json().get("default_branch")
+    if not default_branch:
+        return False, "GitHub repository has no default branch to initialize the data branch from."
+
+    source_url = f"{api_root}/git/ref/heads/{quote(default_branch, safe='')}"
+    source_resp = requests.get(source_url, headers=cfg["headers"], timeout=10)
+    if source_resp.status_code != 200:
+        return False, f"GitHub API returned {source_resp.status_code} while reading the default branch."
+    source_sha = source_resp.json().get("object", {}).get("sha")
+    if not source_sha:
+        return False, "GitHub default branch did not return a commit SHA."
+
+    create_resp = requests.post(
+        f"{api_root}/git/refs",
+        headers=cfg["headers"],
+        json={"ref": "refs/heads/data", "sha": source_sha},
+        timeout=10,
+    )
+    if create_resp.status_code == 201:
+        return True, "Success"
+    if create_resp.status_code == 422:
+        # Another session may have created the branch after our initial GET.
+        ref_resp = requests.get(ref_url, headers=cfg["headers"], timeout=10)
+        if ref_resp.status_code == 200:
+            return True, "Success"
+    return False, f"GitHub API returned {create_resp.status_code} while creating the data branch."
+
+
+def _response_entry_key(entry):
+    if isinstance(entry, dict):
+        identity = (entry.get("user"), entry.get("session_id"), entry.get("question_id"))
+        if all(value is not None for value in identity):
+            return identity
+    return json.dumps(entry, sort_keys=True, ensure_ascii=False, default=str)
+
+
+def _github_commit_file(
+    local_path, repo_path, message, branch=None,
+    merge_profile_user=None, merge_response_user=None,
+):
     """Pushes local_path's current content to repo_path in the repo via the
     GitHub Contents API (create-or-update, using the existing file's sha if
     present so this is a proper update rather than a conflicting create).
     Returns (True, "Success") or (False, "specific error message"). Never
     raises -- shared by github_backup() (state files -> backup/*.json) and
-    the in-app typo-fix save (question-bank files -> data/*.json).
+    the in-app typo-fix save (question-bank files -> data/*.json), and
+    milestone profile/history writes (profiles.json and responses.json on
+    the data branch). Profile and history writes re-fetch and merge the
+    user's latest data on every retry.
 
     Retries on a 409 specifically, up to _GITHUB_CONFLICT_RETRY_ATTEMPTS
     times: a 409 here means another commit landed between our own GET (to
@@ -1280,15 +1350,76 @@ def _github_commit_file(local_path, repo_path, message):
     if not cfg:
         return False, "Backup not configured (missing github_token/github_repo secrets)."
     try:
-        content = local_path.read_text(encoding="utf-8")
-        b64 = base64.b64encode(content.encode("utf-8")).decode("ascii")
+        if branch and (merge_profile_user or merge_response_user):
+            branch_ok, branch_msg = _github_ensure_data_branch(cfg)
+            if not branch_ok:
+                return False, branch_msg
+
         url = f"https://api.github.com/repos/{cfg['repo']}/contents/{repo_path}"
-        payload_base = {"message": message, "content": b64}
+        local_profiles = None
+        local_responses = None
+        if merge_profile_user:
+            try:
+                local_profiles = json.loads(local_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError) as e:
+                return False, f"Could not read local profiles: {e}"
+            if not isinstance(local_profiles, dict) or merge_profile_user not in local_profiles:
+                return False, f"Local profiles do not contain {merge_profile_user}'s profile."
+        if merge_response_user:
+            try:
+                local_responses = json.loads(local_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError) as e:
+                return False, f"Could not read local quiz history: {e}"
+            if not isinstance(local_responses, list):
+                return False, "Local quiz history is not a JSON list."
 
         for attempt in range(_GITHUB_CONFLICT_RETRY_ATTEMPTS):
-            get_resp = requests.get(url, headers=cfg["headers"], timeout=10)
+            get_args = {"headers": cfg["headers"], "timeout": 10}
+            if branch:
+                get_args["params"] = {"ref": branch}
+            get_resp = requests.get(url, **get_args)
+            if merge_profile_user or merge_response_user:
+                if get_resp.status_code == 200:
+                    try:
+                        remote_data = json.loads(
+                            base64.b64decode(
+                                get_resp.json().get("content", "").replace("\n", "")
+                            ).decode("utf-8")
+                        )
+                    except (ValueError, UnicodeDecodeError, json.JSONDecodeError) as e:
+                        return False, f"Could not read remote {repo_path}: {e}"
+                elif get_resp.status_code == 404:
+                    remote_data = {} if merge_profile_user else []
+                else:
+                    return False, f"GitHub API returned {get_resp.status_code} while reading {repo_path}."
+
+                if merge_profile_user:
+                    if not isinstance(remote_data, dict):
+                        return False, f"Remote {repo_path} is not a JSON object."
+                    remote_data[merge_profile_user] = local_profiles[merge_profile_user]
+                else:
+                    if not isinstance(remote_data, list):
+                        return False, f"Remote {repo_path} is not a JSON list."
+                    merged_responses = []
+                    seen = set()
+                    for response in remote_data + [
+                        entry for entry in local_responses
+                        if isinstance(entry, dict) and entry.get("user") == merge_response_user
+                    ]:
+                        key = _response_entry_key(response)
+                        if key not in seen:
+                            seen.add(key)
+                            merged_responses.append(response)
+                    remote_data = merged_responses
+                content = json.dumps(remote_data, indent=2, ensure_ascii=False)
+            else:
+                content = local_path.read_text(encoding="utf-8")
+
+            b64 = base64.b64encode(content.encode("utf-8")).decode("ascii")
+            payload = {"message": message, "content": b64}
+            if branch:
+                payload["branch"] = branch
             sha = get_resp.json().get("sha") if get_resp.status_code == 200 else None
-            payload = dict(payload_base)
             if sha:
                 payload["sha"] = sha
             put_resp = requests.put(url, headers=cfg["headers"], json=payload, timeout=10)
@@ -1296,8 +1427,8 @@ def _github_commit_file(local_path, repo_path, message):
                 return True, "Success"
             if put_resp.status_code != 409:
                 return False, f"GitHub API returned {put_resp.status_code} while pushing {local_path.name}."
-            # 409 -- another commit won the race. Loop and try again with a
-            # freshly-fetched sha, unless this was the last attempt.
+            # 409 -- refresh remote state before retrying and merge the active
+            # user's latest profile or quiz-history entries again.
         return False, (
             f"GitHub API returned 409 while pushing {local_path.name} after "
             f"{_GITHUB_CONFLICT_RETRY_ATTEMPTS} attempts (repeated write conflicts -- "
@@ -1407,6 +1538,51 @@ def _locked_file(path, default):
         if fcntl:
             fcntl.flock(lock_f, fcntl.LOCK_UN)
         lock_f.close()
+
+
+def _record_profile_milestone(user, milestone):
+    now = datetime.now().isoformat()
+    with _locked_file(PROFILES_FILE, {}) as profiles:
+        profile = profiles.setdefault(user, {})
+        profile.setdefault("name", user)
+        profile.setdefault("created_at", now)
+        profile["updated_at"] = now
+        if milestone == "quiz_submission":
+            profile["quiz_submissions"] = sum(
+                1 for response in load_responses() if response.get("user") == user
+            )
+            profile["last_submission_at"] = now
+        elif milestone != "profile_created":
+            return False, f"Unsupported profile milestone: {milestone}"
+
+    load_profiles.clear()
+    profile_result = _github_commit_file(
+        PROFILES_FILE,
+        "profiles.json",
+        f"Profile {milestone}: {user}",
+        branch="data",
+        merge_profile_user=user,
+    )
+    if milestone == "quiz_submission":
+        history_result = _github_commit_file(
+            RESPONSES_FILE,
+            "responses.json",
+            f"Quiz submission history: {user}",
+            branch="data",
+            merge_response_user=user,
+        )
+        failures = [
+            message for ok, message in (profile_result, history_result) if not ok
+        ]
+        result = (not failures, "; ".join(failures) if failures else "Success")
+    else:
+        result = profile_result
+
+    if result[0]:
+        st.session_state.pop("_profile_sync_warning", None)
+    else:
+        st.session_state["_profile_sync_warning"] = result[1]
+    return result
 
 
 # ---------- Data loading ----------
@@ -2947,6 +3123,9 @@ def save_response(entry):
     with _locked_file(RESPONSES_FILE, []) as responses:
         responses.append(entry)
     load_responses.clear()
+    user = entry.get("user")
+    if user:
+        _record_profile_milestone(user, "quiz_submission")
 
 
 @st.cache_data
@@ -2975,6 +3154,11 @@ def update_schedule_atomic(user, question_id, correct, skipped, now, confidence=
 @st.cache_data
 def load_users():
     return _locked_read(USERS_FILE, {})
+
+
+@st.cache_data
+def load_profiles():
+    return _locked_read(PROFILES_FILE, {})
 
 
 def save_user_pin(name, pin):
@@ -3752,6 +3936,9 @@ def main():
         st.session_state._restore_attempted = True
 
     user = get_current_user()
+    profile_sync_warning = st.session_state.pop("_profile_sync_warning", None)
+    if profile_sync_warning:
+        st.warning(f"Could not sync profile or quiz history to GitHub: {profile_sync_warning}")
 
     # Repairs any response left without a matching schedule entry by a past
     # crash between the two independent writes in render_question() -- see
