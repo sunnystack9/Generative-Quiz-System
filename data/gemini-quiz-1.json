@@ -1,0 +1,1452 @@
+[
+  {
+    "question_id": "HCS-ANC-001",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Prehistoric India",
+    "question": "Consider the following statements regarding the Stone Age cultures in the Indian subcontinent:\n\n1. Palaeolithic sites have been discovered in almost all parts of the subcontinent except the alluvial plains of the Indus and the Ganga.\n2. In the Belan Valley on the northern spurs of the Vindhyas, all three phases of the Palaeolithic followed by the Mesolithic and the Neolithic have been found in an uninterrupted stratigraphic sequence.\n3. Apart from Burzahom in Kashmir, Piklihal in Andhra Pradesh is the only other Neolithic site in India that has yielded a large number of bone implements.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "All three"
+      },
+      {
+        "label": "d",
+        "text": "None"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Statement 1 is correct: Palaeolithic hunters and gatherers depended entirely on stone tools and hilly river valleys; hence Palaeolithic sites are found across India except in the stone-free, heavily forested alluvial plains of the Indus and the Ganga.\nStatement 2 is correct: On the northern spurs of the Vindhyas in the Belan Valley (Mirzapur district, UP), all three phases of the Palaeolithic followed by the Mesolithic and then by the Neolithic have been found in stratigraphic sequence.\nStatement 3 is incorrect: Apart from Burzahom (c. 2400 BCE, Kashmir), the only other place in India that has yielded considerable bone implements is Chirand (40 km west of Patna in Bihar, situated at the confluence of the Ganga, Son, Gandak and Ghaghra, dated not earlier than 1600 BCE). Piklihal (and Utnur, 2300 BCE) in Andhra Pradesh is famous for Neolithic cattle-herders' ash mounds and cowpens, not bone implements.\nSource: R. S. Sharma, Class XI NCERT, Ch. 4 (The Stone Age), pp. 20–24."
+  },
+  {
+    "question_id": "HCS-ANC-002",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Chalcolithic & Copper-Hoard Cultures",
+    "question": "Consider the following statements regarding the Chalcolithic and Copper-Hoard cultures of India:\n\n1. While microlithic stone blades occupied an important position at Gilund in the Banas valley, stone axes and blades are completely absent at the nearby site of Ahar.\n2. Among all excavated Chalcolithic settlements in India, Navdatoli on the bank of the Narmada has yielded the largest variety of foodgrains, pulses and oilseeds.\n3. Unlike the Harappans who used separate cemeteries, the Jorwe culture people of western Maharashtra buried their dead in urns under the floor of their houses in an east-to-west orientation.\n4. Nearly half of the Copper Hoards—comprising celts, harpoons, antennae swords and anthropomorphic figures—are concentrated in the Ganga-Yamuna doab in association with Ochre-Coloured Pottery (OCP).\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement 1 is correct: At Ahar (Tambavati) in the dry Banas valley of south-eastern Rajasthan, microlithic stone axes or blades are completely absent because raw copper was locally available in abundance (yielding numerous flat copper axes), whereas nearby Gilund had a stone-blade industry.\nStatement 2 is correct: Navdatoli (excavated by H. D. Sankalia on the south bank of the Narmada in MP) has yielded wheat, rice, bajra, lentil (masur), black gram, green gram, grass pea, ber and linseed—more varieties of cereals than any other excavated site in India.\nStatement 3 is incorrect: While the Jorwe Chalcolithic people of Maharashtra indeed buried their dead in urns under the floor of their houses without separate cemeteries, the bodies were placed in the north-to-south position (not east-to-west, which was the burial orientation in South India; West Bengal practised fractional burial).\nStatement 4 is correct: Over 40 Copper Hoards have been found from Chotanagpur to the upper Gangetic basin, with nearly half concentrated in the Ganga-Yamuna doab associated with Ochre-Coloured Pottery (OCP, c. 2000–1800 BCE).\nSource: R. S. Sharma, Class XI NCERT, Ch. 5 (The Stone-Copper Phase), pp. 26–32."
+  },
+  {
+    "question_id": "HCS-ANC-003",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Indus Valley Civilisation",
+    "question": "Consider the following statements regarding agriculture, irrigation and animal domestication in the Harappan Civilisation:\n\n1. Furrows discovered in the pre-Harappan phase at Kalibangan indicate that fields were ploughed at right angles to each other, enabling the cultivation of two different crops simultaneously.\n2. While traces of canals have been found at the Harappan site of Shortughai in Afghanistan, channel or canal irrigation seems to have been absent in the alluvial floodplains of Sindh and Punjab.\n3. Unlike the contemporary cities of Lower Mesopotamia, the Harappan settlements in Gujarat cultivated rice and domesticated elephants.\n4. Skeletal and sculptural remains from Mohenjo-daro, Harappa and Banawali demonstrate that the horse was in regular military and transport use from the Mature Harappan phase onwards.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement 1 is correct: Pre-Harappan (Early Harappan) levels at Kalibangan (Rajasthan) revealed a ploughed field with two sets of furrows at right angles, indicating intercropping of two crops (such as mustard and gram).\nStatement 2 is correct: While traces of canals have been found at the Harappan outpost of Shortughai in northern Afghanistan (Class XII NCERT Theme 1, p. 4), channel or canal irrigation was absent in the Indus plains of Sindh and Punjab, which relied on annual flood inundation (and gabarbands/dams in Baluchistan) (R. S. Sharma Ch. 6, p. 38).\nStatement 3 is correct: Unlike contemporary Sumerian cities in Mesopotamia, the Harappans in Gujarat produced rice (at Lothal by 1800 BCE and husks at Rangpur) and domesticated elephants.\nStatement 4 is incorrect: The horse was NOT in regular use in Harappan times. Evidence is restricted to a superficial level at Mohenjo-daro, a doubtful terracotta figurine from Lothal, and horse bones reported from Surkotada (Kutch, Gujarat) around 2000 BCE.\nSource: R. S. Sharma, Class XI NCERT, Ch. 6, pp. 37–39; Class XII NCERT, Theme 1 (Bricks, Beads and Bones), pp. 3–4."
+  },
+  {
+    "question_id": "HCS-ANC-004",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Indus Valley Civilisation",
+    "question": "Consider the following statements regarding the Harappan sites in Haryana and adjoining regions:\n\n1. Both Kalibangan in northern Rajasthan and Banawali in Haryana witnessed two distinct cultural phases—pre-Harappan (Early Harappan) and Mature Harappan—and yielded remains of mud-brick platforms, streets and drains.\n2. At Chanhu-daro in Sindh, the entire settlement was divided into three fortified sections—Citadel, Middle Town and Lower Town—and equipped with massive rock-cut water reservoirs.\n3. Terracotta models of the plough have been recovered from both Cholistan and Banawali.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "1 and 2 only"
+      },
+      {
+        "label": "b",
+        "text": "2 only"
+      },
+      {
+        "label": "c",
+        "text": "2 and 3 only"
+      },
+      {
+        "label": "d",
+        "text": "3 only"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Statement 1 is correct: Both Kalibangan (Rajasthan) and Banawali (Fatehabad/Hisar district, Haryana) show pre-Harappan and Mature Harappan phases with mud-brick platforms, streets, drains and barley remains at Banawali.\nStatement 2 is incorrect (hence the answer): Chanhu-daro (130 km south of Mohenjo-daro in Sindh) was a small craft-production settlement (<7 hectares) completely lacking a citadel. It was Dholavira (in Kutch, Gujarat) that was uniquely divided into three fortified parts (Citadel, Middle Town, Lower Town) and famous for giant rock-cut water reservoirs.\nStatement 3 is correct: Terracotta models of the plough have been found at sites in Cholistan (Pakistan) and at Banawali (Haryana) (Class XII NCERT Theme 1, p. 3).\nSource: R. S. Sharma, Class XI NCERT, Ch. 6, pp. 34, 38; Class XII NCERT, Theme 1, pp. 3, 7–10."
+  },
+  {
+    "question_id": "HCS-ANC-005",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Vedic Age",
+    "question": "Consider the following statements regarding the Rig Vedic period (c. 1500–1000 BCE):\n\n1. In the Rig Veda, the term jana (tribe) occurs about 275 times and vis occurs 170 times, whereas the territorial term janapada is not mentioned even once.\n2. The Aryan chiefs were relatively soft towards the Dasas—who appear to have been an earlier branch of the Aryans—but were strongly hostile to the indigenous Dasyus, repeatedly celebrating dasyuhatya.\n3. Gifts (dakshina) made to priests in the Rig Veda consisted primarily of measured plots of agricultural land and male slaves employed in ploughing.\n4. At Bhagwanpura in Haryana, Painted Grey Ware (PGW) has been found overlapping with Late Harappan pottery alongside a thirteen-roomed mud house, cattle bones and abundant iron ploughshares.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Statement 1 is correct: Primary loyalty in the Rig Veda was to the tribe (jana, occurring ~275 times; vis, occurring 170 times), while janapada (territory) does not occur even once.\nStatement 2 is correct: Because Dasas are mentioned in ancient Iranian literature (and Divodasa of the Bharata clan bore the suffix), Aryan chiefs were softer toward them than toward the indigenous Dasyus (phallus-worshippers who did not keep cattle for dairy products), against whom dasyuhatya is repeatedly invoked.\nStatement 3 is incorrect: In the pastoral Rig Vedic economy, land did not form a well-established type of private property; dakshina to priests was given in cows and women domestic slaves, never in measured plots of land, and slaves were not used in agricultural production.\nStatement 4 is incorrect: At Bhagwanpura (Kurukshetra district, Haryana, dated 1600–1000 BCE), PGW overlapped with Late Harappan pottery alongside cattle bones and a 13-roomed mud house, but NEITHER iron objects NOR cereals were found—representing a pre-iron phase of PGW.\nSource: R. S. Sharma, Class XI NCERT, Ch. 7 (Advent of the Aryans and the Age of the Rig Veda), pp. 46–49."
+  },
+  {
+    "question_id": "HCS-ANC-006",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Vedic Age",
+    "question": "Consider the following statements regarding the transition from the Rig Vedic to the Later Vedic phase (c. 1000–600 BCE):\n\n1. In the Later Vedic period, the tribal assembly called the vidatha completely disappeared, and women were no longer permitted to sit on the sabha.\n2. Among the four types of pottery known to the Later Vedic people, Painted Grey Ware (PGW) was the most popular everyday utilitarian ware used by the common peasantry, whereas Red Ware was a rare luxury ware reserved for royal rituals.\n3. Even in Later Vedic times, varna distinctions had not advanced so far as to exclude sudras from all public coronation rituals, and the rathakara (chariot-maker) was entitled to the sacred thread (upanayana) ceremony.\n4. All four asramas (stages of life)—brahmachari, grihastha, vanaprastha and sannyasa—were well established and mandatory in the Later Vedic texts.\n\nHow many of the statements given above are INCORRECT?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Statement 1 is correct: In Later Vedic times, the vidatha completely disappeared, and women were barred from the sabha (which became dominated by nobles and brahmanas).\nStatement 2 is incorrect: Of the four Later Vedic pottery wares (Black-and-Red, Black-Slipped, PGW, Red Ware), Red Ware was the most popular everyday ware found all over western UP, whereas Painted Grey Ware (PGW) bowls and dishes formed the distinctive luxury tableware used by the upper orders for rituals and dining.\nStatement 3 is correct: Sudras still participated in several public coronation rituals in Later Vedic times, and the rathakara (chariot-maker) enjoyed high status and was entitled to the sacred thread (upanayana).\nStatement 4 is incorrect: Only the first three asramas (brahmachari, grihastha, vanaprastha) are mentioned in Later Vedic texts; the fourth stage (sannyasa) was not well established until post-Vedic times.\nSource: R. S. Sharma, Class XI NCERT, Ch. 8 (The Later Vedic Phase), pp. 54–57."
+  },
+  {
+    "question_id": "HCS-ANC-007",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Mahajanapadas & Rise of Magadha",
+    "question": "Consider the following statements regarding the territorial states (Mahajanapadas) and the rise of the Magadhan Empire:\n\n1. While Bimbisara conquered Anga and placed it under the viceroyalty of Ajatasatru at Champa, it was his grandson Udayin who built the strategic water-fort (jaladurga) at Pataliputra at the confluence of the Ganga and the Son.\n2. The greatest military achievement of Mahapadma Nanda was the destruction of the power of Avanti (Ujjain), which brought the hundred-year-old rivalry between Magadha and Avanti to an end.\n3. Archaeological excavations confirm that neither Basarh (ancient Vaisali) nor Ayodhya was settled on any significant urban scale before the sixth century BCE.\n\nWhich of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "1 and 2 only"
+      },
+      {
+        "label": "b",
+        "text": "1 and 3 only"
+      },
+      {
+        "label": "c",
+        "text": "2 and 3 only"
+      },
+      {
+        "label": "d",
+        "text": "1, 2 and 3"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Statement 1 is correct: Bimbisara (544–492 BCE) annexed Anga, Ajatasatru (492–460 BCE) annexed Kasi and Vaisali and began fortifying Rajgir, and Udayin (460–444 BCE) built the water-fort (jaladurga) at Pataliputra at the Ganga–Son confluence.\nStatement 2 is incorrect: The destruction of the power of Avanti (Ujjain) was the greatest achievement of the Sisunaga dynasty (who also temporarily shifted the capital to Vaisali). Mahapadma Nanda (titled ekarat) conquered Kalinga (bringing a Jina image as a victory trophy) and Kosala.\nStatement 3 is correct: Despite Puranic claims of great antiquity, excavations prove that neither Basarh (Vaisali) nor Ayodhya was settled on any scale before the 6th century BCE.\nSource: R. S. Sharma, Class XI NCERT, Ch. 10 (Territorial States and the First Magadhan Empire), pp. 69–72."
+  },
+  {
+    "question_id": "HCS-ANC-008",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Mahajanapadas & Rise of Magadha",
+    "question": "Consider the following statements comparing the monarchical states and the republican oligarchies (gana-sanghas) in the age of the Buddha:\n\n1. In the monarchies of Kosala and Magadha, when influential brahmanas and setthis were granted villages by the king, they received only the revenue of the villages and were not given any administrative or judicial authority.\n2. In the Lichchhavi republic of Vaisali, brahmanas held a reserved quota among the 7,707 rajas sitting in the central assembly (santhagara), whereas brahmanas were excluded from the royal parishad in monarchies.\n3. While a monarchy maintained a single regular standing army controlled by the king, in a tribal oligarchy each raja was free to maintain his own small army under his senapati.\n4. In the post-Mauryan republics of the Malavas and the Kshudrakas, citizenship was extended to both kshatriyas and brahmanas, but slaves and hired labourers remained excluded.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement 1 is correct: In pre-Mauryan Kosala and Magadha, brahmana and setthi donees received only the revenue of granted villages without any administrative or judicial authority.\nStatement 2 is incorrect: In the Lichchhavi republic of Vaisali, brahmanas were NOT included among the 7,707 rajas and had no place in early republican assemblies; conversely, in the monarchies, the old sabha and samiti were replaced by a small royal council called the parishad consisting exclusively of brahmanas.\nStatement 3 is correct: Every monarchy maintained one central standing army, whereas in a republican oligarchy each raja maintained his own small army under his senapati.\nStatement 4 is correct: In the post-Mauryan republics of the Malavas and Kshudrakas, citizenship was given to both kshatriyas and brahmanas, while slaves and hired labourers remained excluded.\nSource: R. S. Sharma, Class XI NCERT, Ch. 12 (State and Varna Society in the Age of the Buddha), pp. 82–84."
+  },
+  {
+    "question_id": "HCS-ANC-009",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Buddhism and Jainism",
+    "question": "Consider the following statements regarding the doctrines and social rules of early Jainism and Buddhism:\n\n1. Unlike Buddhism which rejected the existence of God, the soul (atman) and the varna system, Jainism recognized the existence of gods (placing them lower than the jina), believed in the soul (jiva) and did not condemn the varna system.\n2. According to Jaina doctrine, the monastic vow of observing continence (brahmacharya) was formulated by Parsvanatha, whereas Vardhamana Mahavira added the vow of non-possession (aparigraha).\n3. Although Gautama Buddha admitted women and people of all castes into the sangha, neither unredeemed debtors nor slaves (without their masters' permission) were permitted to join the sangha.\n4. The earliest Buddhist text Suttanipata declares cattle to be givers of food, beauty and happiness (annada, vannada, sukhada) and pleads for their protection.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement 1 is correct: Jainism recognized gods (below the jina), affirmed the existence of souls (jiva) in all living and natural entities, and did not condemn the varna system (explaining varna birth through prior karma), whereas Buddhism rejected God, the soul (atman/anatta) and the varna system.\nStatement 2 is incorrect: Of the five Jaina vows (ahimsa, satya, asteya, aparigraha, brahmacharya), the first four—including aparigraha—were inherited from previous teachers like Parsvanatha, and only the fifth vow—observing continence (brahmacharya)—was added by Vardhamana Mahavira (along with complete nudity).\nStatement 3 is correct: Debtors were barred from joining the Buddhist sangha (helping moneylenders) and slaves could not join without their masters' permission (helping slave-owners).\nStatement 4 is correct: The Pali text Suttanipata calls cattle annada, vannada, sukhada (givers of food, beauty and happiness) and pleads for their preservation.\nSource: R. S. Sharma, Class XI NCERT, Ch. 9 (Jainism and Buddhism), pp. 62–67."
+  },
+  {
+    "question_id": "HCS-ANC-010",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Buddhism and Jainism",
+    "question": "Consider the following statements regarding the spread, councils and literature of Jainism and Buddhism:\n\n1. Following the twelve-year famine in Magadha, the first Jaina council was convened at Pataliputra to compile the teachings, but the southern Jainas (Digambaras) boycotted the council and refused to accept its decisions.\n2. While the earliest Buddhist canonical texts in Pali were finally compiled in the second century BCE in Sri Lanka, the Jaina religious texts in Ardhamagadhi Prakrit were finally compiled in the sixth century CE at Valabhi in Gujarat.\n3. Out of Ardhamagadhi Prakrit grew the Marathi language, whereas the Jainas boycotted the use of Apabhramsa and Sanskrit throughout the early medieval period.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "1 and 2 only"
+      },
+      {
+        "label": "b",
+        "text": "2 only"
+      },
+      {
+        "label": "c",
+        "text": "3 only"
+      },
+      {
+        "label": "d",
+        "text": "1 and 3 only"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statements 1 and 2 are correct: The post-famine Jaina council at Pataliputra (3rd c. BCE) was boycotted by the southern followers of Bhadrabahu (Digambaras); the Pali Buddhist canon was compiled in the 2nd century BCE in Sri Lanka, and the Jaina Ardhamagadhi canon in the 6th century CE at Valabhi (Gujarat).\nStatement 3 is incorrect (hence the answer): It was out of Sauraseni Prakrit (not Ardhamagadhi) that the Marathi language grew; furthermore, the Jainas composed the earliest important works in Apabhramsa and its first grammar, and also wrote extensively in Sanskrit and Kannada in early medieval times.\nSource: R. S. Sharma, Class XI NCERT, Ch. 2 (p. 6–7) & Ch. 9 (pp. 63–64)."
+  },
+  {
+    "question_id": "HCS-ANC-011",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Mauryan Empire",
+    "question": "Consider the following statements regarding the Mauryan administration and economy:\n\n1. In the Mauryan fiscal machinery, the Samaharta was the chief custodian of the state treasury and storehouse, whereas the Sannidhata was the highest officer in charge of the assessment of taxes.\n2. Although Megasthenes stated in his Indika that he did not notice any slaves in India, Kautilya's Arthasastra shows that slaves were employed on a large scale in state agricultural operations during the Mauryan period.\n3. While the manufacture of arms and weapons, mining and the sale of liquor were monopolies of the Mauryan state, the use of iron tools for agriculture and crafts was not restricted to any class.\n4. Important functionaries called tirthas were paid in cash in punch-marked silver panas, with the highest officers receiving up to 48,000 panas and the lowest receiving 60 panas or less.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement 1 is incorrect: This is a classic administrative swap—the Samaharta was the highest officer in charge of assessment of taxes, whereas the Sannidhata was the chief custodian of the state treasury and storehouse.\nStatements 2, 3 and 4 are correct: Megasthenes missed Indian slavery, whereas Kautilya's Arthasastra shows large-scale deployment of slaves (including 150,000 Kalinga captives) on royal farms (sitabhumi); only arms, mining and liquor were state monopolies (civilian iron tools were unrestricted); and tirthas were paid in silver panas (1 pana = 3/4ths of a tola), ranging from 48,000 panas down to 60 or 10–20 panas.\nSource: R. S. Sharma, Class XI NCERT, Ch. 13 (p. 87) & Ch. 14 (Significance of the Maurya Rule), pp. 93–96."
+  },
+  {
+    "question_id": "HCS-ANC-012",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Mauryan Empire",
+    "question": "Consider the following statements regarding the inscriptions and policy of Emperor Ashoka:\n\n1. In the Rummindei (Lumbini) Pillar Inscription commemorating his visit in his twentieth regnal year, Ashoka completely exempted the village of Lumbini from both bali (tribute) and bhaga (the royal share of agricultural produce).\n2. In his edicts propagating Dhamma, Ashoka held that if people behaved well in accordance with social norms they would attain heaven (svarga), and he never stated that they would attain nirvana.\n3. In Major Rock Edict XII, Ashoka warned that whosoever praises his own religious sect or blames other sects out of excessive devotion to glorify his own sect actually injures his own sect very severely.\n4. To check the oppressive misrule of wicked bureaucrats (dushtamatyas), Ashoka's Kalinga edicts introduced the regular rotation of officers in Tosali, Ujjain and Taxila.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement 1 is incorrect: In the Rummindei Pillar Inscription, Ashoka exempted the village of Lumbini from bali (tribute), but reduced bhaga (the royal share of agricultural produce) to one-eighth (1/8th, atha-bhagiye) rather than abolishing it completely.\nStatements 2, 3 and 4 are correct: Ashoka's Dhamma promised heaven (svarga) and never mentioned nirvana; Major Rock Edict XII warned that sectarian self-glorification and blaming other sects severely injures one's own sect; and the Kalinga edicts mandated rotation of officers in Tosali, Ujjain and Taxila (not Pataliputra).\nSource: R. S. Sharma, Class XI NCERT, Ch. 13 (pp. 90–91, Fig. 13.1) & Ch. 14 (p. 100)."
+  },
+  {
+    "question_id": "HCS-ANC-013",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Post-Mauryan Period & Foreign Contacts",
+    "question": "Consider the following statements regarding foreign invasions and Central Asian contacts in ancient India:\n\n1. During the 200-year Indo-Iranian contact following Darius's invasion (516 BCE), Iranian scribes introduced the Kharosthi script (written from right to left), and silver punch-marked coins began circulating in India as an imitation of Achaemenian Persian coinage.\n2. Alexander's invasion of north-west India (326–325 BCE) finds no mention in any indigenous Indian literary or epigraphic source and is reconstructed entirely on the basis of Greek accounts.\n3. The Indo-Greeks were the first rulers in India to issue coins that can be definitely attributed to individual kings, and they were also the first to issue gold coins in India.\n4. While the Gupta emperors issued the largest total number of gold coins in ancient India, the gold coins issued by the early Kushan kings possessed a higher degree of gold purity than those of the Guptas.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement 1 is incorrect: While Iranian scribes did bring the Kharosthi script (written right to left) into north-west India, R. S. Sharma explicitly states that it is WRONG to think that punch-marked coins continued in India as a result of contact with Iran.\nStatements 2, 3 and 4 are correct: Alexander's invasion is completely absent from Indian sources; the Indo-Greeks were the first to issue king-attributed coins and the first to issue gold coins in India (while the Kushans issued gold coins on a wide scale); and early Kushan gold coins had a higher gold purity than Gupta gold coins (even though the Guptas issued the largest number of gold coins).\nSource: R. S. Sharma, Class XI NCERT, Ch. 2 (p. 4, 7), Ch. 11 (p. 75), & Ch. 15 (pp. 104, 106)."
+  },
+  {
+    "question_id": "HCS-ANC-014",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Age of the Satavahanas",
+    "question": "Consider the following statements regarding the Satavahana Empire in the Deccan:\n\n1. Although the Puranas refer to the dynasty as the 'Andhras', the name 'Andhra' does not occur in any Satavahana inscription, and their earliest inscriptions of the first century BCE have been found in western Maharashtra rather than in Andhra.\n2. Because Satavahana rulers bore metronymics such as Gautamiputra and Vasisthiputra, succession to the Satavahana throne was matrilineal, passing from the queen mother to her daughter or sister's son.\n3. Despite the existence of the Kolar goldfields in Karnataka, the Satavahanas did not issue gold coins and minted their currency mostly in lead, potin, copper and bronze.\n4. In the Satavahana countryside, rural administration was placed in the hands of the gaulmika, who was the head of a military regiment consisting of 9 chariots, 9 elephants, 25 horses and 45 foot-soldiers.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statements 1, 3 and 4 are correct: 'Andhra' occurs only in the Puranas and never in Satavahana epigraphs, whose earliest 1st c. BCE records are in western Maharashtra (upper Godavari valley); the Satavahanas never minted gold coins (using lead, potin, copper, bronze); and the gaulmika was the rural military-administrative head of a platoon (gulma = 9 chariots, 9 elephants, 25 horses, 45 foot-soldiers).\nStatement 2 is incorrect: Despite matrilineal metronymics (Gautamiputra, Vasisthiputra) and powerful queen-regents, the Satavahana ruling family was basically PATRIARCHAL because succession to the throne passed to the male member.\nSource: R. S. Sharma, Class XI NCERT, Ch. 16 (The Age of the Satavahanas), pp. 114–118."
+  },
+  {
+    "question_id": "HCS-ANC-015",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Gupta Period",
+    "question": "Consider the following statements regarding the political history and administration of the Gupta Empire:\n\n1. In the early rise of the Guptas, Uttar Pradesh was a more important province than Bihar because early Gupta coins and inscriptions have been found mainly in Uttar Pradesh, with Prayag serving as their initial centre of power.\n2. In Harishena's Allahabad Pillar Inscription, Samudragupta annexed both the kingdoms of the Ganga-Yamuna doab (Aryavarta) and the twelve kingdoms of the eastern Deccan and South India (Dakshinapatha) directly into the Gupta provincial system.\n3. During the Gupta period, villagers in central and western India were subjected to unpaid forced labour called vishti for serving the royal army and officials, which was treated as a sort of tax by the state.\n4. For the first time in ancient India, civil law (dealing with property and inheritance disputes) and criminal law (dealing with theft and adultery) were clearly defined and demarcated during the Gupta period.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statements 1, 3 and 4 are correct: Early Gupta coins and inscriptions are concentrated in Uttar Pradesh (around Prayag), making UP more important than Bihar for the early Guptas; vishti was unpaid forced labour exacted from villagers in central and western India for the royal army and officers; and civil and criminal law were clearly demarcated for the first time in the Gupta period.\nStatement 2 is incorrect: While Samudragupta uprooted and incorporated the kingdoms of the Ganga-Yamuna doab (Group 1) directly into the Gupta Empire, the twelve rulers of the eastern Deccan and South India (Group 4, up to Kanchi) were conquered and liberated/reinstated (grahana-moksha-anugraha) on recognizing his suzerainty.\nSource: R. S. Sharma, Class XI NCERT, Ch. 19 (pp. 134–137) & Ch. 20 (Life in the Gupta Age), pp. 140–141."
+  },
+  {
+    "question_id": "HCS-ANC-016",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Gupta Period",
+    "question": "Consider the following statements regarding society, culture and economy during the Gupta period:\n\n1. Archaeological excavations at sites such as Sonkh in Mathura prove that urban settlements and burnt-brick structures in north India reached their all-time ancient peak during the Gupta period, far surpassing the Kushan levels.\n2. In the Gupta period, the position of sudras and women improved insofar as they were permitted to listen to the Ramayana, the Mahabharata and the Puranas, whereas the untouchable chandalas increased in number and faced severe segregation as noted by Fa-hsien.\n3. All Sanskrit plays produced in the Gupta period are comedies with no tragedies, and in these plays higher-class men speak Sanskrit while women and sudras speak Prakrit.\n\nWhich of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "1 and 2 only"
+      },
+      {
+        "label": "b",
+        "text": "2 and 3 only"
+      },
+      {
+        "label": "c",
+        "text": "1 and 3 only"
+      },
+      {
+        "label": "d",
+        "text": "1, 2 and 3"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Statement 1 is incorrect: Urbanization in north India reached its archaeological peak in the Kushan phase (1st–2nd centuries CE), not the Gupta phase. At Sonkh (Mathura), excavations revealed seven levels of the Kushan phase and only one level of the Gupta phase, and Gupta structures at many sites were poorly built using reused Kushan bricks.\nStatements 2 and 3 are correct: Sudras and women gained permission to listen to the Epics and Puranas and worship Krishna, while chandalas faced severe untouchability outside villages (Fa-hsien); and all Gupta plays are comedies (no tragedies) where upper-class men speak Sanskrit while women and sudras speak Prakrit.\nSource: R. S. Sharma, Class XI NCERT, Ch. 18 (p. 132) & Ch. 20 (pp. 142–146)."
+  },
+  {
+    "question_id": "HCS-ANC-017",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Post-Gupta India & Harshavardhana",
+    "question": "Consider the following statements regarding the spread of civilization in Eastern India (4th–7th centuries CE) and the reign of Harshavardhana (606–647 CE):\n\n1. Under the Mathara (Pitribhakta) kings of Orissa in the mid-fifth century CE, the year was divided into twelve lunar months, and uniquely in Orissa some agrahara villages granted to brahmanas were required to pay taxes.\n2. The copper-plate land sale documents of Pundravardhanabhukti (north Bengal) show that fallow, uncultivated land was purchased with gold coins called dinaras with the consent of local community elders, scribes, merchants and cultivators.\n3. According to Hsuan Tsang, law and order in Harshavardhana's empire was so impeccably maintained that robbery was completely unknown, all state officials were paid in gold coins, and the sudras were barred from practising agriculture.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "1 only"
+      },
+      {
+        "label": "b",
+        "text": "2 only"
+      },
+      {
+        "label": "c",
+        "text": "3 only"
+      },
+      {
+        "label": "d",
+        "text": "1 and 3 only"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statements 1 and 2 are correct: The Matharas (Pitribhaktas) of Orissa introduced the 12-lunar-month calendar in the mid-5th century CE and taxed some agraharas (an exception to the general pan-Indian rule); and the Pundravardhanabhukti (north Bengal) copper-plates (from 432–33 CE) record the purchase of fallow, untaxed land with gold dinaras involving local elders, scribes, merchants and cultivators.\nStatement 3 is incorrect (hence the answer): According to Hsuan Tsang, law and order under Harshavardhana was NOT well maintained (Hsuan Tsang himself was robbed of his belongings!), state officials were rewarded and paid through grants of land (one-fourth of royal revenue) as Harsha issued very few coins, and Hsuan Tsang explicitly describes the sudras as agriculturists.\nSource: R. S. Sharma, Class XI NCERT, Ch. 21 (pp. 149–151) & Ch. 22 (Harsha and His Times), pp. 154–155."
+  },
+  {
+    "question_id": "HCS-ANC-018",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Peninsular India (300–750 CE)",
+    "question": "Consider the following statements regarding the states, rural organization and temple architecture of Peninsular India (c. 300–750 CE):\n\n1. In the sixth century CE, the Kalabhras led a widespread revolt in south India that overthrew established kings, revoked brahmadeya land rights granted to brahmanas in numerous villages, and patronized Buddhist monasteries.\n2. In the rural organization of south India, the ur was an exclusive village assembly of brahmana landholders in agrahara villages, whereas the sabha was the common village assembly of non-brahmana peasant castes.\n3. At the Chalukyan temple site of Pattadakal, the Papanatha temple (c. 680 CE) features a low, stunted tower in the northern (Nagara) style, whereas the Virupaksha temple (c. 740 CE) was constructed purely in the southern (Dravida) style with a high square storied tower (sikhara).\n4. Before the eighth century CE, early stone temples in south India were constructed and maintained out of royal taxes rather than permanent temple land grants, which became common on temple walls only after the eighth century CE.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statements 1, 3 and 4 are correct: The 6th-century Kalabhra revolt abolished brahmadeya rights and patronized Buddhist monasteries (crushed jointly by the Pandyas, Pallavas and Chalukyas); at Pattadakal, the Papanatha temple (c. 680 CE) has a northern-style low tower while the Virupaksha temple (c. 740 CE) is purely in the southern style; and land grants to temples recorded on temple walls became common in south India only after the 8th century CE.\nStatement 2 is incorrect: The definitions are swapped—the ur was the commonest village type inhabited by non-brahmana peasant castes (holding land in common), whereas the sabha consisted of brahmadeya and agrahara villages granted to brahmanas (and nagaram was dominated by merchants).\nSource: R. S. Sharma, Class XI NCERT, Ch. 23 (Formation of New States and Rural Expansion in the Peninsula), pp. 159–162."
+  },
+  {
+    "question_id": "HCS-ANC-019",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Megalithic Phase & Sangam Age",
+    "question": "Consider the following statements regarding the Megalithic phase and the Sangam Age in the Deep South:\n\n1. In the megalithic graves of peninsular India, iron tools meant for fighting and hunting are found in larger numbers than agricultural implements, and the megalith builders generally settled on hill slopes rather than in fertile deltaic plains.\n2. To protect their trade interests, the Romans stationed two military regiments and built a temple of Emperor Augustus at the Chola port of Puhar (Kaveripattanam) on the Coromandal coast.\n3. In the Sangam texts, the kshatriyas and vaisyas do not appear as regular varnas, and the Tamil brahmanas consumed meat and wine.\n4. In the Sangam social hierarchy, the rich peasants called vellalas constituted the fourth caste, held the bulk of agricultural land, had marriage relations with the ruling arasar class, and held high civil and military offices under the Cholas and Pandyas.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statements 1, 3 and 4 are correct: Megalithic graves contain more fighting/hunting iron tools than agricultural tools and were concentrated on upland hill slopes; in Sangam texts, kshatriyas and vaisyas do not appear as regular varnas and Tamil brahmanas took meat and wine; and rich vellala peasants formed the fourth caste, intermarried with the ruling arasar, and held civil/military offices.\nStatement 2 is incorrect: The Romans stationed two regiments and built a temple of Augustus at Muziris (Muchiri / Cranganore) in the Chera country on the Malabar (western) coast, not at the Chola port of Puhar on the eastern coast.\nSource: R. S. Sharma, Class XI NCERT, Ch. 17 (The Dawn of History in the Deep South), pp. 120–124."
+  },
+  {
+    "question_id": "HCS-ANC-020",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Philosophy, Science & Cultural Contacts",
+    "question": "Consider the following statements regarding ancient Indian philosophy, science, mathematics and cultural contacts with Asia:\n\n1. The Sankhya philosophical system propounded by Kapila does not recognize the existence of God and holds that the world was created by nature (prakriti), acquiring real knowledge through observation (pratyaksha), inference (anumana) and words (sabda).\n2. While the Western world borrowed the Indian decimal system, zero and algebra from the Arabs, the Chinese learnt the Indian decimal system through Buddhist missionaries.\n3. In the Charakasamhita, Charaka described the surgical method of operating cataract and stone disease using 121 surgical implements, which he borrowed from Greek physicians.\n4. When the Chinese Buddhist pilgrim Fa-hsien visited Java (Suvarnadvipa) in the fifth century CE, he found Mahayana Buddhism flourishing there as the exclusive state religion.\n\nHow many of the statements given above are correct?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "Only three"
+      },
+      {
+        "label": "d",
+        "text": "All four"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Statements 1 and 2 are correct: Kapila's Sankhya system is non-theistic/materialistic (world created by prakriti, not God; 3 pramanas: observation, inference, words); and the Chinese learnt the Indian decimal system from Buddhist missionaries, while the Western world acquired decimals, zero and algebra via the Arabs.\nStatement 3 is incorrect: First, Indians did not owe anything striking to the Greeks in medicine, botany and chemistry; second, cataract surgery and 121 surgical implements are described by Susruta in the Susrutasamhita, whereas Charaka's Charakasamhita (2nd c. CE) deals with internal medicine (fever, leprosy, hysteria/mirgi, tuberculosis) and plant herbs (oshadhi).\nStatement 4 is incorrect: When Fa-hsien visited Java (Suvarnadvipa) in the 5th century CE, he found the brahmanical religion prevalent there (not Mahayana Buddhism).\nSource: R. S. Sharma, Class XI NCERT, Ch. 15 (p. 112), Ch. 24 (p. 165), & Ch. 27 (pp. 179–181)."
+  },
+  {
+    "question_id": "HCS-ANC-021",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Prehistoric & Protohistoric Sites",
+    "question": "Consider the following information regarding Prehistoric and Protohistoric archaeological sites in India:\n\n| No. | Archaeological Site | River / Geographical Setting | Key Archaeological Discovery |\n| :--- | :--- | :--- | :--- |\n| 1. | Burzahom | Kashmir Valley plateau | Pit dwellings, coarse grey pottery, bone tools and domestic dogs buried with masters |\n| 2. | Chirand | Confluence of Ganga, Son, Gandak and Ghaghra (Bihar) | Late Neolithic / Chalcolithic bone implements, round houses and fish hooks |\n| 3. | Inamgaon | Bhima–Ghod basin (Western Maharashtra) | Fortified Jorwe settlement with moat, five-roomed house and Mother Goddess figurine |\n\nIn how many of the above rows is the given information correctly matched?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "All three"
+      },
+      {
+        "label": "d",
+        "text": "None"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Row 1 is correct: Burzahom (20 km from Srinagar, Kashmir, c. 2400 BCE) is famous for oval/circular pit dwellings, coarse grey pottery, bone tools and domestic dogs buried with their masters.\nRow 2 is correct: Chirand (40 km west of Patna at the confluence of Ganga, Son, Gandak and Ghaghra, c. 1600 BCE) yielded numerous bone implements, postholes/round houses, black-and-red ware and fish hooks.\nRow 3 is correct: Inamgaon (Pune district, Maharashtra) was a large fortified Jorwe settlement surrounded by a moat, featuring a five-roomed house (4 rectangular, 1 circular) and a Mother Goddess figurine similar to Western Asia.\nSource: R. S. Sharma, Class XI NCERT, Ch. 4 (p. 22) & Ch. 5 (pp. 26–30)."
+  },
+  {
+    "question_id": "HCS-ANC-022",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Indus Valley Civilisation",
+    "question": "Consider the following pairs of Harappan trade terms/outposts and their historical identification:\n\n1. Meluha : Intermediate trading station identified with Bahrain on the Persian Gulf\n2. Dilmun : Ancient Mesopotamian name given to the Indus region\n3. Shortughai : Harappan trading outpost in northern Afghanistan near the source of lapis lazuli\n\nHow many of the above pairs are correctly matched?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one pair"
+      },
+      {
+        "label": "b",
+        "text": "Only two pairs"
+      },
+      {
+        "label": "c",
+        "text": "All three pairs"
+      },
+      {
+        "label": "d",
+        "text": "None of the pairs"
+      }
+    ],
+    "answer": "a",
+    "explanation": "Pairs 1 and 2 are incorrect (Swapped): In Mesopotamian cuneiform records from c. 2350 BCE, Meluha was the ancient name given to the Indus region, whereas Dilmun (identified with Bahrain on the Persian Gulf) and Makan (Makran/Oman) were the two intermediate trading stations.\nPair 3 is correct: Shortughai in northern Afghanistan was a Harappan trading outpost established near the best source of lapis lazuli.\nSource: R. S. Sharma, Class XI NCERT, Ch. 6 (p. 39); Class XII NCERT, Theme 1 (p. 12–14)."
+  },
+  {
+    "question_id": "HCS-ANC-023",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Vedic & Post-Vedic Literature",
+    "question": "Match List I (Post-Vedic Sutra / Vedic Texts) with List II (Specific Subject Matter / Historical Significance) and select the correct code:\n\n| LIST-I (Ancient Text) | LIST-II (Subject Matter / Significance) |\n| :--- | :--- |\n| I. Srautasutras | a. Domestic rituals connected with birth, naming, sacred thread investiture, marriage and funerals |\n| II. Grihyasutras | b. Measurements for the construction of sacrificial altars, marking the beginnings of geometry and mathematics |\n| III. Sulvasutras | c. Grand public sacrifices and royal coronation ceremonies meant for princes and men of the three higher varnas |\n| IV. Satapatha Brahmana | d. Detailed account of agricultural ploughing rituals and King Janaka of Videha lending his hand to the plough |",
+    "options": [
+      {
+        "label": "a",
+        "text": "I-c, II-a, III-b, IV-d"
+      },
+      {
+        "label": "b",
+        "text": "I-a, II-c, III-b, IV-d"
+      },
+      {
+        "label": "c",
+        "text": "I-c, II-b, III-a, IV-d"
+      },
+      {
+        "label": "d",
+        "text": "I-b, II-a, III-c, IV-d"
+      }
+    ],
+    "answer": "a",
+    "explanation": "I. Srautasutras (c): Prescribe grand public sacrifices and royal coronation ceremonies for princes and men of substance of the three higher varnas.\nII. Grihyasutras (a): Prescribe domestic household rituals (birth, naming, upanayana, marriage, funerals).\nIII. Sulvasutras (b): Prescribe measurements for sacrificial altars, marking the beginnings of Indian geometry and mathematics.\nIV. Satapatha Brahmana (d): Describes agricultural ploughing rituals at length and mentions King Janaka of Videha holding the plough.\nSource: R. S. Sharma, Class XI NCERT, Ch. 2 (p. 6) & Ch. 8 (p. 54)."
+  },
+  {
+    "question_id": "HCS-ANC-024",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "State & Varna Society in the Age of the Buddha",
+    "question": "Consider the following pairs of administrative and fiscal officers in the age of the Buddha (6th–5th centuries BCE) and their functions:\n\n1. Balisadhaka : Officer appointed to collect customs and tolls from merchants on the sale of commodities\n2. Saulkika (Sulkadhyaksha) : Officer appointed to collect the compulsory agricultural tax (bali) from peasants\n3. Bhandagarika : Treasurer in the administrative machinery of the republican oligarchies (Sakyas and Lichchhavis)\n\nHow many of the above pairs are correctly matched?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one pair"
+      },
+      {
+        "label": "b",
+        "text": "Only two pairs"
+      },
+      {
+        "label": "c",
+        "text": "All three pairs"
+      },
+      {
+        "label": "d",
+        "text": "None of the pairs"
+      }
+    ],
+    "answer": "a",
+    "explanation": "Pairs 1 and 2 are incorrect (Swapped): Balisadhakas were officers appointed to collect the compulsory agricultural tribute (bali) from peasants, whereas Saulkika or Sulkadhyaksha were customs/toll officers who collected duties (sulka) from traders on the sale of commodities.\nPair 3 is correct: Bhandagarika was the treasurer in the administrative machinery of the republican oligarchies (alongside raja, uparaja, senapati).\nSource: R. S. Sharma, Class XI NCERT, Ch. 12, pp. 82–83."
+  },
+  {
+    "question_id": "HCS-ANC-025",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Buddhism and Jainism",
+    "question": "Consider the following pairs of ancient Indian religious texts and their sectarian affiliation:\n\n1. Nettipakarana : Canonical Svetambara Jaina text in Prakrit\n2. Parishishtaparvan : Jaina historical work composed by Hemachandra\n3. Avadanasataka : Buddhist Sanskrit anthology of Avadana legends\n4. Therigatha : Pali Buddhist collection of verses composed by elder nuns (bhikkhunis)\n\nWhich of the above pairs are correctly matched?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only 1, 2 and 3"
+      },
+      {
+        "label": "b",
+        "text": "Only 2, 3 and 4"
+      },
+      {
+        "label": "c",
+        "text": "Only 1, 3 and 4"
+      },
+      {
+        "label": "d",
+        "text": "1, 2, 3 and 4"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Pair 1 is incorrect: Nettipakarana (The Book of Guidance) is a Pali Buddhist text (mythologically attributed to Mahakaccana), NOT a Jaina text.\nPairs 2, 3 and 4 are correct: Parishishtaparvan (Sthaviravalicharita) is a 12th-century Sanskrit Jaina work by Hemachandra; Avadanasataka (along with Mahavastu and Divyavadana) is a Buddhist Sanskrit Avadana anthology; and Therigatha is a Pali Buddhist collection of poems by elder bhikkhunis.\nSource: R. S. Sharma, Class XI NCERT, Ch. 15 (p. 111); Class XII NCERT, Theme 4 (p. 92)."
+  },
+  {
+    "question_id": "HCS-ANC-026",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Mauryan Empire",
+    "question": "Consider the following information regarding Ashoka's inscriptions and their geographical and historical context:\n\n| No. | Inscription / Edict Site | Modern State / Country | Key Epigraphic Feature / Content |\n| :--- | :--- | :--- | :--- |\n| 1. | Kalsi | Uttarakhand | Major Rock Edict site located in the Himalayan foothills on the ancient trade route |\n| 2. | Jaugada | Madhya Pradesh | Separate Kalinga Rock Edict addressing provincial officers on judicial fairness |\n| 3. | Kandahar | Afghanistan | Bilingual/bi-scriptural edict in Greek and Aramaic recording that hunters and fishermen gave up killing animals |\n\nIn how many of the above rows is the given information correctly matched?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "All three"
+      },
+      {
+        "label": "d",
+        "text": "None"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Row 1 is correct: Kalsi is located in Dehradun district of Uttarakhand (in the Himalayan foothills road network).\nRow 2 is incorrect: Jaugada (along with Dhauli) is located in Odisha (ancient Kalinga), NOT in Madhya Pradesh.\nRow 3 is correct: The Kandahar inscription in Afghanistan was written in Greek and Aramaic and records the success of Ashoka's Dhamma with hunters and fishermen, who gave up killing animals and took to a settled agricultural life.\nSource: R. S. Sharma, Class XI NCERT, Ch. 13 (pp. 88–90, Fig. 10) & Ch. 14 (p. 94, 97)."
+  },
+  {
+    "question_id": "HCS-ANC-027",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Post-Mauryan Crafts, Trade & Towns",
+    "question": "Consider the following pairs of Post-Mauryan archaeological sites/centres and their specialized craft or urban findings:\n\n1. Mathura : Manufacture of a special type of cloth called sataka and guild of flour-makers accepting cash endowments\n2. Uraiyur and Arikamedu : Brick-built dyeing vats of the 1st–3rd centuries CE testifying to a flourishing textile industry\n3. Yelleshwaram (Nalgonda district) : Largest number of post-Mauryan terracottas and terracotta moulds\n4. Peddabankur (Karimnagar district) : Satavahana site with 22 brickwells, fire-baked bricks, perforated roof tiles and covered drains\n\nHow many of the above pairs are correctly matched?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one pair"
+      },
+      {
+        "label": "b",
+        "text": "Only two pairs"
+      },
+      {
+        "label": "c",
+        "text": "Only three pairs"
+      },
+      {
+        "label": "d",
+        "text": "All four pairs"
+      }
+    ],
+    "answer": "d",
+    "explanation": "Pair 1 is correct: Mathura was famous for a special cloth called sataka and a 2nd-century CE inscription recording a chief depositing money with the guild of flour-makers.\nPair 2 is correct: Brick-built dyeing vats of the 1st–3rd centuries CE were unearthed at Uraiyur and Arikamedu in Tamil Nadu/Puducherry.\nPair 3 is correct: Yelleshwaram in Nalgonda district (Telangana) yielded the largest number of post-Mauryan terracottas and their moulds.\nPair 4 is correct: Peddabankur (200 BCE–200 CE) in Karimnagar district yielded 22 brickwells, fire-baked bricks, flat perforated roof tiles and covered underground drains.\nSource: R. S. Sharma, Class XI NCERT, Ch. 16 (p. 116) & Ch. 18 (pp. 126–128)."
+  },
+  {
+    "question_id": "HCS-ANC-028",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Post-Mauryan & Gupta Epigraphy",
+    "question": "Match List I (Historical Inscriptions of the Post-Mauryan & Gupta Eras) with List II (Ruler / Historical Significance) and select the correct code:\n\n| LIST-I (Inscription) | LIST-II (Ruler / Historical Significance) |\n| :--- | :--- |\n| I. Kalawan Copper-Plate Inscription (Year 134 of Azes) | a. Earliest epigraphic evidence of the decimal system in India from Allahabad district |\n| II. Junagadh (Girnar) Rock Inscription (c. 150 CE) | b. Prakrit Kharosthi record near Taxila documenting the installation of Buddha relics by laywoman Chandrabhi |\n| III. Mandasor Stone Inscription (473 CE) | c. First-ever long inscription in chaste Sanskrit (kavya style) issued by Saka ruler Rudradaman I |\n| IV. Gupta Inscription of 448 CE | d. Records the migration of a guild of silk weavers from Lata (Gujarat) to Malwa and their shift to non-productive professions |",
+    "options": [
+      {
+        "label": "a",
+        "text": "I-b, II-c, III-d, IV-a"
+      },
+      {
+        "label": "b",
+        "text": "I-c, II-b, III-d, IV-a"
+      },
+      {
+        "label": "c",
+        "text": "I-b, II-c, III-a, IV-d"
+      },
+      {
+        "label": "d",
+        "text": "I-d, II-c, III-b, IV-a"
+      }
+    ],
+    "answer": "a",
+    "explanation": "I. Kalawan Copper-Plate Inscription (b): 1st-century CE Prakrit Kharosthi inscription from Kalawan (near Taxila), dated Year 134 of Azes, recording the installation of Buddha relics by laywoman Chandrabhi (Fig. 15.2, p. 104).\nII. Junagadh (Girnar) Rock Inscription (c): Issued around 150 CE by Saka ruler Rudradaman I; first-ever long inscription in chaste Sanskrit (kavya style) recording repairs to the Sudarsana lake.\nIII. Mandasor Stone Inscription of 473 CE (d): Records the migration of a guild of silk weavers from Lata (Gujarat) to Mandasor (Malwa).\nIV. Gupta Inscription of 448 CE (a): From Allahabad district; provides the earliest epigraphic evidence of the decimal system in India at the beginning of the 5th century CE.\nSource: R. S. Sharma, Class XI NCERT, Ch. 15 (p. 104–105, 111), Ch. 19 (p. 138), & Ch. 20 (p. 147)."
+  },
+  {
+    "question_id": "HCS-ANC-029",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Eastern & Peninsular Kingdoms (4th–7th c. CE)",
+    "question": "Consider the following pairs of Eastern and Peninsular Indian dynasties/fiscal units (4th–7th centuries CE) and their historical descriptions:\n\n1. Dandabhukti : Fiscal and administrative unit formed on the border between Bengal and Orissa for taming and punishing tribal inhabitants\n2. Dantayavagubhoga : Rural fiscal unit created by the Matharas in Orissa that supplied ivory and rice-gruel to its administrators\n3. Nalas : Dynasty ruling in the forest area of Mahakantara whose gold coins have been found in the tribal Bastar area of Madhya Pradesh\n4. Western Gangas of Kolar : Dynasty in southern Karnataka that made land grants predominantly to Buddhist viharas\n\nHow many of the above pairs are correctly matched?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one pair"
+      },
+      {
+        "label": "b",
+        "text": "Only two pairs"
+      },
+      {
+        "label": "c",
+        "text": "Only three pairs"
+      },
+      {
+        "label": "d",
+        "text": "All four pairs"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Pairs 1, 2 and 3 are correct: Dandabhukti was the Bengal–Orissa border fiscal unit formed for taming/punishing (danda) tribals; Dantayavagubhoga was the Mathara district in Orissa supplying ivory and rice-gruel; and the Nalas of Mahakantara issued gold coins found in Bastar (MP).\nPair 4 is incorrect: The Western Gangas of southern Karnataka (earliest capital at Kolar) made land grants mostly to the Jainas (not Buddhist viharas).\nSource: R. S. Sharma, Class XI NCERT, Ch. 21 (pp. 149–150) & Ch. 23 (p. 159)."
+  },
+  {
+    "question_id": "HCS-ANC-030",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Sangam Age",
+    "question": "Consider the following pairs of social groups and institutions mentioned in the Sangam literature:\n\n1. Enadi : Women of the lowest class who carried on agricultural operations on the estates of rich peasants\n2. Kadaisiyar : Formal title conferred upon captains of the army at a royal investiture ceremony\n3. Pulaiyans : Low-class artisans who made rope charpais and used animal skins as mats\n\nHow many of the above pairs are correctly matched?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one pair"
+      },
+      {
+        "label": "b",
+        "text": "Only two pairs"
+      },
+      {
+        "label": "c",
+        "text": "All three pairs"
+      },
+      {
+        "label": "d",
+        "text": "None of the pairs"
+      }
+    ],
+    "answer": "a",
+    "explanation": "Pairs 1 and 2 are incorrect (Swapped): In the Sangam texts, Enadi was the formal title conferred upon captains of the army at a royal investiture ceremony, whereas Kadaisiyar denoted women of the lowest class who carried on agricultural operations (whose status differed little from slaves).\nPair 3 is correct: Pulaiyans were low-class artisans who made rope charpais and used animal skins as mats.\nSource: R. S. Sharma, Class XI NCERT, Ch. 17, p. 124."
+  },
+  {
+    "question_id": "HCS-ANC-031",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Ancient Indian Literature & Biographies",
+    "question": "Consider the following information regarding Ancient Indian Biographical, Historical and Classical Texts:\n\n| No. | Literary Work | Author | Primary Historical Subject / Content |\n| :--- | :--- | :--- | :--- |\n| 1. | Ramacharita | Sandhyakara Nandi | Conflict between the Kaivarta peasants and the Pala prince Ramapala in the 12th century |\n| 2. | Vikramankadevacharita | Bilhana | Achievements of his patron Vikramaditya VI (1076–1127), the Chalukya king of Kalyan |\n| 3. | Mricchakatika | Sudraka | Social drama whose hero Charudatta is depicted as both a brahmana and a merchant (sarthavaha) |\n\nIn how many of the above rows is the given information correctly matched?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one"
+      },
+      {
+        "label": "b",
+        "text": "Only two"
+      },
+      {
+        "label": "c",
+        "text": "All three"
+      },
+      {
+        "label": "d",
+        "text": "None"
+      }
+    ],
+    "answer": "c",
+    "explanation": "Row 1 is correct: Sandhyakara Nandi's Ramacharita (12th century) narrates the conflict between the Kaivarta peasants and the Pala prince Ramapala.\nRow 2 is correct: Bilhana's Vikramankadevacharita recounts the achievements of his patron Vikramaditya VI (1076–1127), the Chalukya king of Kalyan.\nRow 3 is correct: Sudraka's Mricchakatika (The Little Clay Cart, c. 4th–5th c. CE) depicts its hero Charudatta as both a brahmana and a merchant (sarthavaha), illustrating occupational mobility in real life beyond rigid Dharmasastra norms (Class XII NCERT Theme 3, p. 64).\nSource: R. S. Sharma, Class XI NCERT, Ch. 2 (p. 8); Class XII NCERT, Theme 3 (p. 64)."
+  },
+  {
+    "question_id": "HCS-ANC-032",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Foreign Accounts & Asian Cultural Contacts",
+    "question": "Consider the following pairs of classical foreign accounts/Asian monuments and their accurate descriptions:\n\n1. Periplus of the Erythrean Sea : First-century CE Latin treatise by Pliny complaining of the drain of Roman gold into India\n2. Borobudur (Java) : Eighth-century monument representing the largest Buddhist temple in the world with 436 images of the Buddha\n3. Angkor Wat (Kampuchea) : Medieval temple complex larger than Borobudur, featuring relief carvings of the Ramayana and the Mahabharata\n\nHow many of the above pairs are correctly matched?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Only one pair"
+      },
+      {
+        "label": "b",
+        "text": "Only two pairs"
+      },
+      {
+        "label": "c",
+        "text": "All three pairs"
+      },
+      {
+        "label": "d",
+        "text": "None of the pairs"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Pair 1 is incorrect: The Periplus of the Erythrean Sea (80–115 CE) was written in Greek by an anonymous author (as was Ptolemy's Geography, c. 150 CE); it was Pliny's Naturalis Historia (77 CE) that was written in Latin and complained of Rome being drained of gold on account of trade with India.\nPairs 2 and 3 are correct: Borobudur (8th c. CE, Java) is the largest Buddhist temple in the world (with 436 Buddha images), while Angkor Wat (Kampuchea/Cambodia) is larger than Borobudur and features relief stories from the Ramayana and Mahabharata.\nSource: R. S. Sharma, Class XI NCERT, Ch. 2 (pp. 7–8), Ch. 18 (p. 131), & Ch. 24 (p. 166)."
+  },
+  {
+    "question_id": "HCS-ANC-033",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Prehistoric & Protohistoric Chronology",
+    "question": "Arrange the following prehistoric and protohistoric cultural developments in the Indian subcontinent in the correct chronological order (earliest to latest):\n\nI. Appearance of Ochre-Coloured Pottery (OCP) and Copper Hoard settlements in the upper Ganga-Yamuna doab.\nII. Emergence of the Jorwe Chalcolithic culture at Inamgaon and Daimabad in western Maharashtra.\nIII. Beginning of rice cultivation at Neolithic sites in Allahabad district on the northern spurs of the Vindhyas.\nIV. Common use of iron weapons (arrow-heads and spear-heads) at Painted Grey Ware (PGW) sites such as Atranjikhera in western Uttar Pradesh.",
+    "options": [
+      {
+        "label": "a",
+        "text": "III, I, II, IV"
+      },
+      {
+        "label": "b",
+        "text": "I, III, II, IV"
+      },
+      {
+        "label": "c",
+        "text": "III, II, I, IV"
+      },
+      {
+        "label": "d",
+        "text": "III, I, IV, II"
+      }
+    ],
+    "answer": "a",
+    "explanation": "III: Earliest rice cultivation at Neolithic sites in Allahabad district — 6th millennium BCE (c. 6000 BCE) (Ch. 4, p. 24).\nI: Ochre-Coloured Pottery (OCP) and Copper Hoard settlements in the upper Ganga-Yamuna doab — c. 2000–1800 BCE (Ch. 5, p. 32).\nII: Jorwe Chalcolithic culture at Inamgaon/Daimabad in western Maharashtra — c. 1300–1000 BCE (Ch. 5, p. 28).\nIV: Common use of iron arrow-heads and spear-heads at PGW sites in western UP (Atranjikhera) — from c. 800 BCE (Ch. 8, p. 52).\nSource: R. S. Sharma, Class XI NCERT, Ch. 4, Ch. 5 & Ch. 8."
+  },
+  {
+    "question_id": "HCS-ANC-034",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Mahajanapadas & Rise of Magadha",
+    "question": "Arrange the following political developments in the rise of the Magadhan Empire and north-western India in the correct chronological order (earliest to latest):\n\nI. Destruction of the power of Avanti (Ujjain) by the Sisunaga dynasty.\nII. Annexation of Punjab (west of the Indus) and Sindh by the Achaemenian ruler Darius as the twentieth satrapy of Iran.\nIII. Conquest of Kalinga and acquisition of a Jina image as a victory trophy by Mahapadma Nanda.\nIV. Construction of the water-fort (jaladurga) at Pataliputra at the confluence of the Ganga and the Son by Udayin.",
+    "options": [
+      {
+        "label": "a",
+        "text": "II, IV, I, III"
+      },
+      {
+        "label": "b",
+        "text": "IV, II, I, III"
+      },
+      {
+        "label": "c",
+        "text": "II, I, IV, III"
+      },
+      {
+        "label": "d",
+        "text": "II, IV, III, I"
+      }
+    ],
+    "answer": "a",
+    "explanation": "II: Invasion and annexation of NW India (20th satrapy) by Achaemenian ruler Darius — 516 BCE (during Bimbisara's reign, 544–492 BCE) (Ch. 11, p. 75).\nIV: Reign of Udayin and construction of the fort at Pataliputra — 460–444 BCE (Ch. 10, p. 72).\nI: Destruction of the power of Avanti (Ujjain) by the Sisunaga dynasty — late 5th / early 4th century BCE (post-444 BCE) (Ch. 10, p. 72).\nIII: Conquest of Kalinga by Mahapadma Nanda (Nanda dynasty) — mid-4th century BCE (Ch. 10, p. 72).\nSource: R. S. Sharma, Class XI NCERT, Ch. 10 & Ch. 11."
+  },
+  {
+    "question_id": "HCS-ANC-035",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Ancient Indian Literature & Science",
+    "question": "Arrange the following milestones in ancient Indian religious, legal and scientific literature in the correct chronological order of their compilation/composition (earliest to latest):\n\nI. Final compilation of the Jaina Ardhamagadhi Prakrit canon at Valabhi in Gujarat.\nII. Systematization of Sanskrit grammatical rules by Panini in his Ashtadhyayi.\nIII. Final compilation of the early Buddhist Pali canonical texts (Tipitaka) in Sri Lanka.\nIV. Composition of the Aryabhatiya by Aryabhata of Pataliputra.",
+    "options": [
+      {
+        "label": "a",
+        "text": "II, III, IV, I"
+      },
+      {
+        "label": "b",
+        "text": "III, II, IV, I"
+      },
+      {
+        "label": "c",
+        "text": "II, III, I, IV"
+      },
+      {
+        "label": "d",
+        "text": "II, IV, III, I"
+      }
+    ],
+    "answer": "a",
+    "explanation": "II: Panini's Ashtadhyayi — 4th century BCE (Ch. 27, p. 180).\nIII: Final compilation of the Pali Buddhist canon in Sri Lanka — 2nd century BCE (Ch. 2, p. 6).\nIV: Aryabhata's Aryabhatiya — 5th century CE (476–500 CE) (Ch. 27, p. 180).\nI: Final compilation of the Jaina Ardhamagadhi Prakrit canon at Valabhi (Gujarat) — 6th century CE (Ch. 2, p. 7; Ch. 9, p. 64).\nSource: R. S. Sharma, Class XI NCERT, Ch. 2, Ch. 9 & Ch. 27."
+  },
+  {
+    "question_id": "HCS-ANC-036",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Post-Mauryan Period & Foreign Contacts",
+    "question": "Arrange the following post-Mauryan historical events and foreign contacts in the correct chronological order (earliest to latest):\n\nI. Victory of the king of Ujjain (Vikramaditya) over the Sakas and the commencement of the Vikrama Samvat.\nII. First invasion of north-western India across the Hindukush by the Bactrian Greeks following the construction of the Great Wall of China.\nIII. Commencement of the Saka Samvat by Kanishka and the convening of the Fourth Buddhist Council in Kashmir.\nIV. Reign of the Indo-Greek king Menander (Milinda) at Sakala (Sialkot).",
+    "options": [
+      {
+        "label": "a",
+        "text": "II, IV, I, III"
+      },
+      {
+        "label": "b",
+        "text": "IV, II, I, III"
+      },
+      {
+        "label": "c",
+        "text": "II, I, IV, III"
+      },
+      {
+        "label": "d",
+        "text": "II, IV, III, I"
+      }
+    ],
+    "answer": "a",
+    "explanation": "II: First invasion of India by the Bactrian Greeks (after the Great Wall of China was built in c. 220 BCE) — 206 BCE (Ch. 14, p. 100).\nIV: Reign of the Indo-Greek ruler Menander (Milinda) at Sakala — 165–145 BCE (Ch. 15, p. 104).\nI: Victory of Ujjain ruler Vikramaditya over the Sakas and start of Vikrama Samvat — 58 BCE (Ch. 15, p. 105).\nIII: Accession of Kanishka, start of the Saka Samvat and Fourth Buddhist Council — 78 CE (Ch. 15, p. 106).\nSource: R. S. Sharma, Class XI NCERT, Ch. 14 & Ch. 15."
+  },
+  {
+    "question_id": "HCS-ANC-037",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Gupta & Post-Gupta Chronology",
+    "question": "Arrange the following developments of the Gupta and Post-Gupta periods in the correct chronological order (earliest to latest):\n\nI. Erection of pillars of victory by Yasodharman of Malwa after overthrowing Huna power and challenging the Guptas.\nII. Migration of the guild of silk weavers from Lata (Gujarat) to Mandasor in Malwa due to declining demand for silk cloth.\nIII. Occupation of the Chalukya capital Vatapi by the Pallava king Narasimhavarman I (Vatapikonda).\nIV. Visit of the Chinese Buddhist pilgrim I-tsing to the monastic university of Nalanda.",
+    "options": [
+      {
+        "label": "a",
+        "text": "II, I, III, IV"
+      },
+      {
+        "label": "b",
+        "text": "I, II, III, IV"
+      },
+      {
+        "label": "c",
+        "text": "II, I, IV, III"
+      },
+      {
+        "label": "d",
+        "text": "II, III, I, IV"
+      }
+    ],
+    "answer": "a",
+    "explanation": "II: Migration of the guild of silk weavers from Lata (Gujarat) to Mandasor (Malwa) — 473 CE (Ch. 19, p. 138).\nI: Erection of pillars of victory by Yasodharman of Malwa — 532 CE (Ch. 19, p. 138).\nIII: Capture of Chalukya capital Vatapi by Pallava king Narasimhavarman I (Vatapikonda) — c. 642 CE (Ch. 23, p. 160).\nIV: Visit of the Chinese pilgrim I-tsing to Nalanda (recording 3,000 monks) — 670 CE (Ch. 22, p. 155).\nSource: R. S. Sharma, Class XI NCERT, Ch. 19, Ch. 22 & Ch. 23."
+  },
+  {
+    "question_id": "HCS-ANC-038",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Archaeological Methods & Preservation",
+    "question": "Given below are two statements:\n\nStatement I: In Indian archaeology, vertical excavations have been conducted at most mounds to establish a good chronological sequence of material culture, whereas horizontal excavations are very few in number because they are prohibitively expensive.\n\nStatement II: Material antiquities and iron implements are found in a far better state of preservation in the moist, humid middle Gangetic basin and deltaic regions than in the arid zones of Rajasthan and north-western India.\n\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Both Statement I and Statement II are true."
+      },
+      {
+        "label": "b",
+        "text": "Both Statement I and Statement II are false."
+      },
+      {
+        "label": "c",
+        "text": "Statement I is true but Statement II is false."
+      },
+      {
+        "label": "d",
+        "text": "Statement I is false but Statement II is true."
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement I is true: Vertical diggings are common in India and establish chronological sequences, whereas horizontal diggings are very expensive and therefore rare.\nStatement II is false: In the moist and humid climate of the middle Gangetic basin and deltaic regions, iron implements suffer corrosion and mud structures are difficult to detect; conversely, antiquities are found in a far better state of preservation in the dry climate of western Uttar Pradesh, Rajasthan and north-western India.\nSource: R. S. Sharma, Class XI NCERT, Ch. 2 (The Construction of Ancient Indian History), p. 3."
+  },
+  {
+    "question_id": "HCS-ANC-039",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Indus Valley Civilisation",
+    "question": "Given below are two statements:\n\nStatement I: In sharp contrast to ancient Egypt and Lower Mesopotamia, no temples have been discovered at any Harappan site, suggesting that the Harappan cities were possibly ruled by a class of merchants rather than priests.\n\nStatement II: To facilitate their brisk internal trade and maritime commerce with Mesopotamia (Meluha), the Harappans issued standardized silver and copper punch-marked coins bearing undeciphered pictographic legends.\n\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Both Statement I and Statement II are true."
+      },
+      {
+        "label": "b",
+        "text": "Both Statement I and Statement II are false."
+      },
+      {
+        "label": "c",
+        "text": "Statement I is true but Statement II is false."
+      },
+      {
+        "label": "d",
+        "text": "Statement I is false but Statement II is true."
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement I is true: No temples have been found at any Harappan site, so priests did not rule Harappa as they did in Lower Mesopotamia; Harappa was possibly ruled by a class of merchants.\nStatement II is false: The Harappans did not use metallic money of any kind, carrying out all trade through barter (silver and copper punch-marked coins appeared first in the 6th century BCE in the age of the Buddha).\nSource: R. S. Sharma, Class XI NCERT, Ch. 6, pp. 39–40."
+  },
+  {
+    "question_id": "HCS-ANC-040",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Vedic Age",
+    "question": "Given below are two statements:\n\nStatement I: During the Later Vedic period, the Vedic people became acquainted for the first time with rice—called vrihi in Vedic texts—in the Ganga-Yamuna doab, with charred remains of rice recovered from eighth-century BCE levels at Hastinapur.\n\nStatement II: In Later Vedic sacrificial rituals, the use of wheat is recommended extensively by the Brahmanas, whereas the use of rice (vrihi) is strictly prohibited as an impure non-Aryan grain.\n\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Both Statement I and Statement II are true."
+      },
+      {
+        "label": "b",
+        "text": "Both Statement I and Statement II are false."
+      },
+      {
+        "label": "c",
+        "text": "Statement I is true but Statement II is false."
+      },
+      {
+        "label": "d",
+        "text": "Statement I is false but Statement II is true."
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement I is true: Vedic people first encountered rice (vrihi) in the Ganga-Yamuna doab during the Later Vedic phase, with charred rice remains recovered from 8th-century BCE levels at Hastinapur.\nStatement II is false: It is the exact opposite—in Later Vedic texts, the use of rice (vrihi) is recommended in rituals, whereas that of wheat is recommended only rarely.\nSource: R. S. Sharma, Class XI NCERT, Ch. 8, p. 54."
+  },
+  {
+    "question_id": "HCS-ANC-041",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Buddhist Art & Iconography",
+    "question": "Given below are two statements:\n\nStatement I: In the early Buddhist sculptural panels of the second century BCE at Bharhut, Sanchi and Gaya, Gautama Buddha was not represented in human form; instead, his presence was indicated through symbols such as an empty seat, a stupa and a wheel.\n\nStatement II: The first human statues worshipped in India were probably those of the Buddha, fashioned from the first century CE onwards in the Gandhara school (in Graeco-Roman style) and the indigenous Mathura school (in spotted red sandstone).\n\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Both Statement I and Statement II are true."
+      },
+      {
+        "label": "b",
+        "text": "Both Statement I and Statement II are false."
+      },
+      {
+        "label": "c",
+        "text": "Statement I is true but Statement II is false."
+      },
+      {
+        "label": "d",
+        "text": "Statement I is false but Statement II is true."
+      }
+    ],
+    "answer": "a",
+    "explanation": "Statement I is true: Early Buddhist reliefs of the 2nd century BCE at Gaya, Sanchi and Bharhut were aniconic, representing the Buddha through symbols (empty seat = meditation, stupa = mahaparinibbana, wheel = first sermon at Sarnath, tree = enlightenment).\nStatement II is true: From the 1st century CE (with the rise of Mahayana Buddhism under Kushan patronage), human statues of the Buddha were worshipped on a large scale, crafted in the Gandhara and Mathura schools.\nSource: R. S. Sharma, Class XI NCERT, Ch. 9 (pp. 67–68) & Ch. 15 (p. 110); Class XII NCERT, Theme 4 (pp. 99–100)."
+  },
+  {
+    "question_id": "HCS-ANC-042",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Social Structure & Land Grants",
+    "question": "Given below are two statements:\n\nStatement I: In the Dharmasastras, the monthly rate of interest on money loans was graded inversely according to varna status, requiring a brahmana debtor to pay two per cent, a kshatriya three per cent, a vaisya four per cent and a sudra five per cent.\n\nStatement II: Up to the fifth century CE, royal land grants to brahmanas generally transferred the full judicial power to try and execute thieves (choradanda), whereas in post-fifth-century charters the king reserved criminal jurisdiction exclusively for royal courts.\n\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Both Statement I and Statement II are true."
+      },
+      {
+        "label": "b",
+        "text": "Both Statement I and Statement II are false."
+      },
+      {
+        "label": "c",
+        "text": "Statement I is true but Statement II is false."
+      },
+      {
+        "label": "d",
+        "text": "Statement I is false but Statement II is true."
+      }
+    ],
+    "answer": "c",
+    "explanation": "Statement I is true: The Dharmasastras fixed monthly loan interest rates inversely by varna: brahmana = 2%, kshatriya = 3%, vaisya = 4%, and sudra = 5%.\nStatement II is false: Up to the fifth century CE, the ruler generally retained the right to punish thieves (choradandavarjam), and it was only in later (post-fifth-century) times that beneficiaries of land grants were authorized to punish all criminal offenders.\nSource: R. S. Sharma, Class XI NCERT, Ch. 25 (pp. 168–169) & Ch. 26 (p. 175)."
+  },
+  {
+    "question_id": "HCS-ANC-043",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Indus Valley Civilisation",
+    "question": "Assertion (A): Although the Harappan Civilisation was a Bronze Age culture, bronze tools and weapons are not prolific at Harappan sites and contain a smaller percentage of tin compared to those of contemporary Mesopotamia and Egypt.\n\nReason (R): Tin was scarce in ancient India, forcing Harappan metallurgists to procure their main supply of tin with great difficulty from Afghanistan.",
+    "options": [
+      {
+        "label": "a",
+        "text": "Both A and R are true and R is the correct explanation of A."
+      },
+      {
+        "label": "b",
+        "text": "Both A and R are true but R is NOT the correct explanation of A."
+      },
+      {
+        "label": "c",
+        "text": "A is true but R is false."
+      },
+      {
+        "label": "d",
+        "text": "A is false but R is true."
+      }
+    ],
+    "answer": "a",
+    "explanation": "Both statements are directly from R. S. Sharma (Ch. 3, p. 17 & Ch. 6, p. 39): because India lacked tin deposits and Harappan artisans had to bring tin with difficulty from Afghanistan, Harappan bronze tools were fewer and contained a smaller percentage of tin than those of Egypt and Mesopotamia."
+  },
+  {
+    "question_id": "HCS-ANC-044",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Geographical Setting & Iron Technology",
+    "question": "Assertion (A): In the Indian subcontinent, large-scale human settlements and agricultural cultures spread historically from west to east—moving from the Indus basin to the western Gangetic plain, and only later to the middle and lower Gangetic basins.\n\nReason (R): While the lighter vegetation of the Indus and western Gangetic plains (receiving 25 to 60 cm annual rainfall) could be cleared with stone and copper implements, the thick hard-soil jungles of the middle and lower Gangetic basins (receiving 60 to 250 cm rainfall) could be cleared only after the introduction of iron implements.",
+    "options": [
+      {
+        "label": "a",
+        "text": "Both A and R are true and R is the correct explanation of A."
+      },
+      {
+        "label": "b",
+        "text": "Both A and R are true but R is NOT the correct explanation of A."
+      },
+      {
+        "label": "c",
+        "text": "A is true but R is false."
+      },
+      {
+        "label": "d",
+        "text": "A is false but R is true."
+      }
+    ],
+    "answer": "a",
+    "explanation": "Directly from R. S. Sharma (Ch. 3, p. 12): as annual rainfall increases from 25 cm in the Indus plains to over 250 cm in the Brahmaputra basin, the lighter vegetation of the Indus (25–37 cm) and western Gangetic (37–60 cm) zones could be cleared with stone and copper tools, whereas the dense, hard-soil forests of the middle Gangetic (60–125 cm) and lower Gangetic/Brahmaputra (125–250 cm) basins required iron axes and ploughshares (~600 BCE onwards), dictating the west-to-east trajectory of settlement."
+  },
+  {
+    "question_id": "HCS-ANC-045",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Mauryan Empire",
+    "question": "Assertion (A): Deeply moved by the carnage of the Kalinga War in his eighth regnal year, Emperor Ashoka became an absolute pacifist who immediately returned Kalinga to its native rulers and disbanded the Mauryan standing army.\n\nReason (R): In his Thirteenth Major Rock Edict, Ashoka expressed profound remorse over the killing of 100,000 people and the deportation of 150,000 prisoners in Kalinga, replacing the policy of bherighosha (physical conquest) with dhammaghosha (cultural conquest).",
+    "options": [
+      {
+        "label": "a",
+        "text": "Both A and R are true and R is the correct explanation of A."
+      },
+      {
+        "label": "b",
+        "text": "Both A and R are true but R is NOT the correct explanation of A."
+      },
+      {
+        "label": "c",
+        "text": "A is true but R is false."
+      },
+      {
+        "label": "d",
+        "text": "A is false but R is true."
+      }
+    ],
+    "answer": "d",
+    "explanation": "Assertion (A) is false: Ashoka did not become an extreme pacifist after the Kalinga War—he retained Kalinga and incorporated it into his empire, did not disband his huge standing army, warned forest tribes to obey established social rules, and empowered rajukas to punish offenders.\nReason (R) is true: Major Rock Edict XIII records the death of 100,000 people and deportation of 150,000 prisoners in Kalinga (8th regnal year) and the replacement of bherighosha with dhammaghosha.\nSource: R. S. Sharma, Class XI NCERT, Ch. 13, pp. 88, 90."
+  },
+  {
+    "question_id": "HCS-ANC-046",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Post-Gupta India & Harshavardhana",
+    "question": "Assertion (A): In the seventh century CE under Harshavardhana, the political seat of power in northern India shifted away from Pataliputra to Kanauj.\n\nReason (R): With the decline of trade, scarcity of metallic money and the feudal practice of paying officers and soldiers through land grants, flat riverine commercial centres like Pataliputra lost their strategic value to elevated, easily fortifiable military camps (skandhavaras) like Kanauj in the middle of the Ganga-Yamuna doab.",
+    "options": [
+      {
+        "label": "a",
+        "text": "Both A and R are true and R is the correct explanation of A."
+      },
+      {
+        "label": "b",
+        "text": "Both A and R are true but R is NOT the correct explanation of A."
+      },
+      {
+        "label": "c",
+        "text": "A is true but R is false."
+      },
+      {
+        "label": "d",
+        "text": "A is false but R is true."
+      }
+    ],
+    "answer": "a",
+    "explanation": "Directly from R. S. Sharma (Ch. 22, p. 153): Pataliputra owed its pre-feudal primacy to riverine commerce, tolls and abundant coinage; once trade waned, coins became scarce and officers were paid via land grants, power shifted to elevated, fortifiable military camps (skandhavaras) like Kanauj in the Ganga-Yamuna doab."
+  },
+  {
+    "question_id": "HCS-ANC-047",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Indus Valley Civilisation",
+    "question": "Which of the following statements uniquely identifies the famous Pasupati Mahadeva steatite seal discovered at Mohenjo-daro?",
+    "options": [
+      {
+        "label": "a",
+        "text": "It depicts a three-horned male deity seated in a yogic posture, surrounded by a lion, a cow, a horse and a humped bull looking towards the four cardinal directions."
+      },
+      {
+        "label": "b",
+        "text": "It depicts a three-horned male deity seated in a yogic posture, surrounded by an elephant, a tiger, a rhinoceros and a buffalo below his throne, with two deer at his feet."
+      },
+      {
+        "label": "c",
+        "text": "It depicts a horned female earth-goddess standing between the branches of a pipal tree with a plant growing out of her embryo and seven kneeling worshippers below."
+      },
+      {
+        "label": "d",
+        "text": "It depicts a one-horned mythical bull (unicorn) standing before a perforated ceremonial brazier with a ten-sign monumental signboard inscription above it."
+      }
+    ],
+    "answer": "b",
+    "explanation": "The Pasupati Mahadeva seal from Mohenjo-daro depicts a three-horned male deity sitting in a yogic posture, surrounded by four animals looking towards the four directions—an elephant, a tiger, a rhinoceros and a buffalo below his throne—with two deer at his feet. Neither a lion, nor a cow, nor a horse is depicted on this seal.\nSource: R. S. Sharma, Class XI NCERT, Ch. 6, pp. 40–41."
+  },
+  {
+    "question_id": "HCS-ANC-048",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Heterodox Sects (6th Century BCE)",
+    "question": "During the sixth century BCE, the middle Gangetic basin witnessed intense philosophical debates among 62 heterodox sects recorded in early Buddhist Pali texts. Which of the following pairs correctly identifies the philosophical doctrines of Makkhali Gosala and Ajita Kesakambalin?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Makkhali Gosala founded the materialist Lokayata school denying the afterlife, whereas Ajita Kesakambalin founded the fatalist Ajivika school holding that everything is predetermined by niyati (fate)."
+      },
+      {
+        "label": "b",
+        "text": "Makkhali Gosala belonged to the fatalist Ajivika tradition teaching that neither wise nor foolish men can alter their allotted pleasure and pain through karma, whereas Ajita Kesakambalin belonged to the materialist Lokayata tradition teaching that a human being dissolves completely into the four elements at death."
+      },
+      {
+        "label": "c",
+        "text": "Both Makkhali Gosala and Ajita Kesakambalin were orthodox Mimamsa ritualists who defended the infallibility of the Vedas against Gautama Buddha."
+      },
+      {
+        "label": "d",
+        "text": "Makkhali Gosala propounded the Syadvada doctrine of sevenfold conditional predication, whereas Ajita Kesakambalin propounded the Mahayana doctrine of Sunyavada."
+      }
+    ],
+    "answer": "b",
+    "explanation": "In Class XII NCERT (Themes in Indian History Part I, Theme 4, p. 87, Fatalists and Materialists excerpt from the Samaññaphala Sutta), Makkhali Gosala belonged to the tradition of the Ajivikas (fatalists who held that pleasure and pain are fixed by niyati and cannot be altered by karma/virtue), whereas Ajita Kesakambalin belonged to the tradition of the Lokayatas (materialists who taught that a human being is made of the four elements—earth, water, fire, wind—and nothing survives after death)."
+  },
+  {
+    "question_id": "HCS-ANC-049",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Sangam Age",
+    "question": "In the context of the socio-political practices of the early Tamil kingdoms during the Sangam Age, what does the term Vattakirutal (Vadakiruttal) denote?",
+    "options": [
+      {
+        "label": "a",
+        "text": "A royal bodyguard corps of armed women warriors who guarded the inner apartments of the Pandya king at Madurai."
+      },
+      {
+        "label": "b",
+        "text": "A maritime customs toll levied on Roman merchant ships anchoring at the ports of Korkai, Poompuhar and Muchiri."
+      },
+      {
+        "label": "c",
+        "text": "A ritual practice in which a king defeated or wounded in the back on the battlefield committed suicide by starving himself to death facing north, often accompanied by loyal retainers and poets."
+      },
+      {
+        "label": "d",
+        "text": "An irrigation tax collected by the Vellala village assemblies along the 160-kilometre embankment of the Kaveri river constructed by Karikala."
+      }
+    ],
+    "answer": "c",
+    "explanation": "In Sangam literature (and R. S. Sharma, Class XI NCERT, Ch. 17, p. 122), Vattakirutal (Vadakiruttal) was the Tamil ritual practice wherein a king defeated in battle or wounded in the back (considered a mark of dishonour, as happened to a Chera king fighting the Cholas) committed suicide by fasting to death facing north, accompanied by loyal comrades and poets."
+  },
+  {
+    "question_id": "HCS-ANC-050",
+    "exam": "HCS",
+    "paper": "1",
+    "year": 2026,
+    "theme": "Ancient History",
+    "subtopic": "Science & Astronomy in Ancient India",
+    "question": "Which one of the following statements accurately distinguishes the astronomical propositions of Aryabhata (5th century CE) and Varahamihira (6th century CE)?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Aryabhata stated in his Aryabhatiya that the sun is stationary and the earth rotates on its axis, whereas Varahamihira stated in his Brihatsamhita that the moon rotates round the earth and the earth rotates round the sun."
+      },
+      {
+        "label": "b",
+        "text": "Aryabhata attributed lunar and solar eclipses to the mythological demons Rahu and Ketu, whereas Varahamihira was the first Indian astronomer to discover the scientific cause of eclipses."
+      },
+      {
+        "label": "c",
+        "text": "Varahamihira formulated the mathematical rule for finding the area of a triangle (originating trigonometry) at Pataliputra, whereas Aryabhata graded the sizes of residential houses according to varna and feudal ranks."
+      },
+      {
+        "label": "d",
+        "text": "Both Aryabhata and Varahamihira rejected Greek and Babylonian planetary observations altogether and relied exclusively on the Sulvasutras."
+      }
+    ],
+    "answer": "a",
+    "explanation": "In R. S. Sharma, Class XI NCERT, Ch. 27 (p. 180): Aryabhata (5th century CE, Aryabhatiya) calculated planetary positions by the Babylonian method, discovered the scientific cause of lunar and solar eclipses, formulated the rule for the area of a triangle (trigonometry), and pointed out that the sun is stationary and the earth rotates on its axis; whereas Varahamihira (6th century CE, Brihatsamhita) stated that the moon rotates round the earth and the earth rotates round the sun (and also graded house sizes by varna and ruling chief ranks in Ch. 25, p. 170)."
+  }
+]
