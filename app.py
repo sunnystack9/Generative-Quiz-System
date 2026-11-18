@@ -1,5 +1,5 @@
 """
-Algorithmic Quiz System — UPSC / HCS Prelims GS Paper I
+Generative Quiz System — UPSC / HCS Prelims GS Paper I
 A practice-mode Streamlit app. Not for use during the live exam --
 this tool is strictly for home practice.
 """
@@ -106,7 +106,7 @@ def marking_for(exam, paper):
 
 try:
     st.set_page_config(
-        page_title="Algorithmic Quiz System — UPSC / HCS GS Paper I",
+        page_title="Generative Quiz System — UPSC / HCS GS Paper I",
         layout="centered",
         initial_sidebar_state="collapsed",
     )
@@ -1073,7 +1073,7 @@ def render_copy_button(label, text, key):
 
 def render_centered_header(caption_text):
     st.markdown(
-        "<h1 style='text-align: center; margin-bottom: 0;'>📚 Algorithmic Quiz System</h1>"
+        "<h1 style='text-align: center; margin-bottom: 0;'>📚 Generative Quiz System</h1>"
         f"<p style='text-align: center; color: gray; font-size: 0.9rem; margin-top: 0.25rem;'>{caption_text}</p>",
         unsafe_allow_html=True,
     )
