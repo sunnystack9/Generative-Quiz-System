@@ -1,0 +1,352 @@
+[
+  {
+    "statement_id": "ANC-001",
+    "parent_topic": "Ancient Indian History",
+    "text": "The Mauryan Brahmi Mahasthana inscription recording a royal granary for famine relief was discovered in Kurnool district of Andhra Pradesh.",
+    "is_true": false,
+    "why": "The Mahasthana inscription was found in Bogra district of Bangladesh (ancient Pundranagara in north Bengal), showing Gangetic material diffusion to Bengal under the Mauryas."
+  },
+  {
+    "statement_id": "ANC-002",
+    "parent_topic": "Ancient Indian History",
+    "text": "By destroying petty kingdoms and tribal republics in north-west India, Alexander's invasion paved the way for Mauryan expansion in that region.",
+    "is_true": true,
+    "why": "Alexander never reached Magadha or fought the Nandas; crushing north-western petty states and republics made subsequent Mauryan unification of that region easier."
+  },
+  {
+    "statement_id": "ANC-003",
+    "parent_topic": "Ancient Indian History",
+    "text": "Deification of the Buddha, treading the path of Bodhisattvas, and large-scale image worship were defining doctrines of early Theravada Buddhism finalized under Ashoka.",
+    "is_true": false,
+    "why": "Deification of the Buddha, the Bodhisattva ideal (Paramitas), and image worship defined Mahayana Buddhism, whose doctrines were finalized at the Fourth Council under Kanishka."
+  },
+  {
+    "statement_id": "ANC-004",
+    "parent_topic": "Ancient Indian History",
+    "text": "The Buddhist social contract theory describing an elected king protecting property and family in exchange for a share of paddy is recorded in the Digha Nikaya.",
+    "is_true": true,
+    "why": "The Digha Nikaya narrates how quarrels over private property and family led people to elect Mahasammata as king in return for a share of paddy."
+  },
+  {
+    "statement_id": "ANC-005",
+    "parent_topic": "Ancient Indian History",
+    "text": "During Alexander's invasion of north-west India, Porus of Taxila surrendered immediately without a fight, while Ambhi offered strong resistance on the Jhelum river.",
+    "is_true": false,
+    "why": "Ambhi, ruler of Taxila, submitted readily and aided Alexander, whereas Porus ruled between the Jhelum and Chenab and offered the strongest resistance on the Jhelum."
+  },
+  {
+    "statement_id": "ANC-006",
+    "parent_topic": "Ancient Indian History",
+    "text": "In Rig Vedic society, women participated in the sabha and vidatha assemblies, practised widow remarriage and levirate, and did not face child marriage.",
+    "is_true": true,
+    "why": "Rig Vedic women attended the sabha and vidatha, practised niyoga (levirate) and widow remarriage, and typically married at age 16 to 17."
+  },
+  {
+    "statement_id": "ANC-007",
+    "parent_topic": "Ancient Indian History",
+    "text": "In the Aitareya Brahmana, relative to the kshatriya prince, the brahmana is described as removable at will, the vaisya as tribute-paying, and the sudra as a servant to be beaten at will.",
+    "is_true": true,
+    "why": "The Aitareya Brahmana calls the brahmana a gift-acceptor removable at will, the vaisya tribute-paying and oppressed at will, and the sudra a servant beaten at will."
+  },
+  {
+    "statement_id": "ANC-008",
+    "parent_topic": "Ancient Indian History",
+    "text": "During the reign of Chandragupta II, the Sri Lankan king Meghavarman sent an embassy to Ujjain seeking permission to construct a Buddhist monastery at Sarnath.",
+    "is_true": false,
+    "why": "Meghavarman sent a missionary to Samudragupta, not Chandragupta II, and was granted permission to build a Buddhist temple and monastery at Bodh Gaya."
+  },
+  {
+    "statement_id": "ANC-009",
+    "parent_topic": "Ancient Indian History",
+    "text": "Persuaded by his favourite disciple Ananda, Gautama Buddha admitted his foster mother Mahapajapati Gotami as the first woman ordained as a bhikkhuni.",
+    "is_true": true,
+    "why": "Initially reluctant to admit women into the sangha, the Buddha was persuaded by Ananda to ordain his foster mother Mahapajapati Gotami first."
+  },
+  {
+    "statement_id": "ANC-010",
+    "parent_topic": "Ancient Indian History",
+    "text": "Like Chanhu-daro, Kot Diji, and Desalpur, the archaeological site of Sohgaura in Uttar Pradesh is a mature Harappan urban settlement.",
+    "is_true": false,
+    "why": "Sohgaura in Gorakhpur district of Uttar Pradesh is not Harappan; it is famous for a Mauryan copper-plate inscription recording famine-relief granaries."
+  },
+  {
+    "statement_id": "ANC-011",
+    "parent_topic": "Ancient Indian History",
+    "text": "Epigraphic records from the fourth century BCE confirm that Jainism was widely established across Karnataka during the reign of Chandragupta Maurya.",
+    "is_true": false,
+    "why": "The late tradition linking Chandragupta Maurya to Karnataka lacks corroboration; actual epigraphic evidence for Jainism in Karnataka is not earlier than the 3rd century CE."
+  },
+  {
+    "statement_id": "ANC-012",
+    "parent_topic": "Ancient Indian History",
+    "text": "Despite Dharmasastra restrictions on female land ownership, the Danguna copper-plate inscription proves that Vakataka queen-regent Prabhavati Gupta granted a village with fiscal exemptions.",
+    "is_true": true,
+    "why": "Prabhavati Gupta, daughter of Chandragupta II, granted a village to Acharya Chanalasvamin with fiscal exemptions, proving royal status could override Dharmasastra norms."
+  },
+  {
+    "statement_id": "ANC-013",
+    "parent_topic": "Ancient Indian History",
+    "text": "Middle Palaeolithic industries in India were primarily based on flake tools such as scrapers and borers and coincided with the third Himalayan glaciation.",
+    "is_true": true,
+    "why": "Middle Palaeolithic tools were flake-based scrapers, borers, and blades contemporary with the third Himalayan glaciation, preceding Mesolithic microliths and Neolithic celts."
+  },
+  {
+    "statement_id": "ANC-014",
+    "parent_topic": "Ancient Indian History",
+    "text": "From the seventh century CE in South India, the Alvar saints popularized the worship of Siva, whereas the Nayanar saints popularized the worship of Vishnu.",
+    "is_true": false,
+    "why": "The Alvars were Vaishnava saints who popularized the worship of Vishnu, whereas the Nayanars were Saiva saints who popularized the worship of Siva."
+  },
+  {
+    "statement_id": "ANC-015",
+    "parent_topic": "Ancient Indian History",
+    "text": "During the Later Vedic period, Prajapati displaced Indra and Agni as the supreme deity, while Pushan came to be worshipped as the god of the sudras.",
+    "is_true": true,
+    "why": "Indra and Agni lost prominence in the Later Vedic pantheon to Prajapati the creator, and cattle-protector Pushan became regarded as the god of the sudras."
+  },
+  {
+    "statement_id": "ANC-016",
+    "parent_topic": "Ancient Indian History",
+    "text": "India's oldest surviving manuscripts date back to the third-century BCE Maurya period and were written on paper in Magadha.",
+    "is_true": false,
+    "why": "Surviving manuscripts are no older than the 4th century CE, found in Central Asia on bark, palm leaf, leather, or wood; paper reached India in the 14th century."
+  },
+  {
+    "statement_id": "ANC-017",
+    "parent_topic": "Ancient Indian History",
+    "text": "In ancient Indian religious terminology, Upasaka denoted a wandering ascetic who renounced family life, while Parivrajaka denoted a lay householder following Buddhism.",
+    "is_true": false,
+    "why": "Parivrajaka meant a wandering renunciant seeking truth, Shramana an ascetic performing austerities, and Upasaka a lay householder follower of Buddhism."
+  },
+  {
+    "statement_id": "ANC-018",
+    "parent_topic": "Ancient Indian History",
+    "text": "Compiled around 400 CE after the major Puranas, the Upanishads defended priestly dominance and elaborated the animal sacrifices prescribed in the Brahmanas.",
+    "is_true": false,
+    "why": "The Upanishads were compiled around 600 BCE—a millennium before the Puranas (400 CE)—and strongly criticized priestly rituals and sacrifices in favour of spiritual knowledge."
+  },
+  {
+    "statement_id": "ANC-019",
+    "parent_topic": "Ancient Indian History",
+    "text": "The Rig Vedic Battle of Ten Kings was fought on the bank of the river Parushni, resulting in victory for Sudas of the Bharata clan.",
+    "is_true": true,
+    "why": "Fought on the Parushni (modern Ravi), the battle gave Sudas of the Bharata clan victory over a confederacy of ten kings including the Purus."
+  },
+  {
+    "statement_id": "ANC-020",
+    "parent_topic": "Ancient Indian History",
+    "text": "Harappan cubical chert weights followed strictly multiples of 10 across every lower and higher denomination used in trade.",
+    "is_true": false,
+    "why": "Harappan weights predominantly used binary multiples of 16, such as 16, 64, 160, 320, and 640, with decimal progression appearing only at higher denominations."
+  },
+  {
+    "statement_id": "ANC-021",
+    "parent_topic": "Ancient Indian History",
+    "text": "The Rig Vedic king maintained a permanent standing army and appointed specialized officers to collect compulsory taxes and administer territorial justice.",
+    "is_true": false,
+    "why": "Rig Vedic kings had no standing army, relying on tribal militias, and the Rig Veda mentions no tax-collecting officer (bali was voluntary) or judicial officer."
+  },
+  {
+    "statement_id": "ANC-022",
+    "parent_topic": "Ancient Indian History",
+    "text": "The Satavahanas were the first rulers in India to make tax-free land grants accompanied by administrative immunities to brahmanas and Buddhist monks.",
+    "is_true": true,
+    "why": "Initiated by the Satavahanas (1st century BCE to 2nd century CE) with bans on royal police entry, such tax-free land grants later expanded widely under the Guptas."
+  },
+  {
+    "statement_id": "ANC-023",
+    "parent_topic": "Ancient Indian History",
+    "text": "In the Rig Veda, Books I and X form the earliest core known as the Family Books, whereas Books II to VII were the latest additions.",
+    "is_true": false,
+    "why": "Books II to VII constitute the oldest core or Family Books of the Rig Veda, whereas Books I and X were the latest additions."
+  },
+  {
+    "statement_id": "ANC-024",
+    "parent_topic": "Ancient Indian History",
+    "text": "Vardhamana Mahavira was born at Lumbini in the Sakya kshatriya clan and attained nirvana at Kusinagar in eastern Uttar Pradesh.",
+    "is_true": false,
+    "why": "Lumbini and Kusinagar are the birth and death sites of Gautama Buddha; Mahavira was born near Vaisali in north Bihar and died at Pavapuri near Rajgir."
+  },
+  {
+    "statement_id": "ANC-025",
+    "parent_topic": "Ancient Indian History",
+    "text": "According to Megasthenes, both Pataliputra's municipal administration and the Mauryan armed forces were each managed by a board of 30 officers divided into six committees of five.",
+    "is_true": true,
+    "why": "Megasthenes records 30-member boards of six five-member committees for both Pataliputra's municipality and the six military wings: infantry, cavalry, elephants, chariots, navy, and transport."
+  },
+  {
+    "statement_id": "ANC-026",
+    "parent_topic": "Ancient Indian History",
+    "text": "Avanti was divided into northern and southern parts with capitals at Ujjain and Mahishamati, and Ujjain outstripped Mahishamati through large-scale iron working.",
+    "is_true": true,
+    "why": "Avanti had twin capitals at Ujjain in the north and Mahishamati in the south, with Ujjain gaining dominance due to extensive iron metallurgy."
+  },
+  {
+    "statement_id": "ANC-027",
+    "parent_topic": "Ancient Indian History",
+    "text": "The Begums of Bhopal funded the preservation of the Sanchi Stupa in situ and offered European museums only plaster-cast copies of its gateways.",
+    "is_true": true,
+    "why": "Shahjehan Begum and Sultan Jehan Begum funded Sanchi's preservation and gave Europeans plaster casts, preventing the fate of Amaravati whose marbles were stripped away."
+  },
+  {
+    "statement_id": "ANC-028",
+    "parent_topic": "Ancient Indian History",
+    "text": "In Gupta provincial administration, the empire was divided into provinces called vishayas headed by uparikas, which were subdivided into districts called bhuktis headed by vishayapatis.",
+    "is_true": false,
+    "why": "Gupta provinces were called bhuktis headed by uparikas, and they were subdivided into districts called vishayas headed by vishayapatis."
+  },
+  {
+    "statement_id": "ANC-029",
+    "parent_topic": "Ancient Indian History",
+    "text": "Although younger than the Indus Valley Civilization, the Chalcolithic cultures of central and western India never adopted the Harappan script, tin-bronze metallurgy, or urban life.",
+    "is_true": true,
+    "why": "Despite dating to 1800 to 800 BCE, central and western Indian Chalcolithic communities remained rural, non-literate, and did not mix tin with copper to make bronze."
+  },
+  {
+    "statement_id": "ANC-030",
+    "parent_topic": "Ancient Indian History",
+    "text": "In ancient India, the terms Ghantasala, Kadura, and Chaul denoted land-measurement units used in Gupta copper-plate charters in Bengal.",
+    "is_true": false,
+    "why": "Ghantasala, Kadura, and Chaul were coastal ports handling foreign trade; Kulyavapa and Dronavapa were the land-measurement units in Gupta copper-plate charters."
+  },
+  {
+    "statement_id": "ANC-031",
+    "parent_topic": "Ancient Indian History",
+    "text": "Sir John Marshall announced the discovery of the Indus Valley Civilization in 1924 while ignoring stratigraphy, whereas R. E. M. Wheeler introduced stratigraphic excavation in 1944.",
+    "is_true": true,
+    "why": "Marshall excavated along regular horizontal lines ignoring mound stratigraphy, a flaw later corrected by ASI Director-General R. E. M. Wheeler from 1944."
+  },
+  {
+    "statement_id": "ANC-032",
+    "parent_topic": "Ancient Indian History",
+    "text": "In western Deccan rock-cut architecture, a chaitya functioned as a columned Buddhist prayer hall, whereas a vihara served as a residential monastery for monks.",
+    "is_true": true,
+    "why": "Chaityas like Karle were rock-cut temples or prayer halls, while nearby viharas such as those at Nasik housed monks during the rainy season."
+  },
+  {
+    "statement_id": "ANC-033",
+    "parent_topic": "Ancient Indian History",
+    "text": "At Mohenjo-daro, the Great Granary in the citadel mound is the largest building, whereas Harappa's citadel contained two rows of six smaller granaries.",
+    "is_true": true,
+    "why": "Mohenjo-daro's Great Granary measures 45.71 by 15.23 metres in the citadel, while Harappa's twelve granaries in two rows of six match its combined floor area."
+  },
+  {
+    "statement_id": "ANC-034",
+    "parent_topic": "Ancient Indian History",
+    "text": "The earliest stone-tool evidence of human occupation in India dates back to the Early Pleistocene period around 3.5 million years ago.",
+    "is_true": false,
+    "why": "Human occupation in India is not earlier than the Middle Pleistocene around 500,000 BCE; the 3.5-million-year date applies to East Africa."
+  },
+  {
+    "statement_id": "ANC-035",
+    "parent_topic": "Ancient Indian History",
+    "text": "Among Later Vedic royal rituals, the Vajapeya involved letting the royal horse roam freely across neighbouring territories to establish unquestioned sovereignty.",
+    "is_true": false,
+    "why": "The Asvamedha involved the roaming royal horse; the Vajapeya was a chariot race in which the royal chariot was made to defeat the king's kinsmen."
+  },
+  {
+    "statement_id": "ANC-036",
+    "parent_topic": "Ancient Indian History",
+    "text": "In the Pali Buddhist Tipitaka, the Abhidhamma Pitaka contains the monastic rules for the sangha, while the Vinaya Pitaka provides the philosophical exposition of dhamma.",
+    "is_true": false,
+    "why": "The Vinaya Pitaka lays down monastic rules for sangha members, whereas the Abhidhamma Pitaka presents the philosophical exposition of dhamma."
+  },
+  {
+    "statement_id": "ANC-037",
+    "parent_topic": "Ancient Indian History",
+    "text": "Dhanyakataka, which flourished as a prominent Buddhist centre under the Mahasanghikas, was located in the Gandhara region of north-western India.",
+    "is_true": false,
+    "why": "Dhanyakataka, situated near Amaravati on the Krishna river, was a major Mahasanghika Buddhist centre in the Andhra region, not Gandhara."
+  },
+  {
+    "statement_id": "ANC-038",
+    "parent_topic": "Ancient Indian History",
+    "text": "In ancient Indian epigraphy, Prakrit served as the earliest official medium from the third century BCE, followed by Sanskrit from the second century CE and regional languages from the ninth century CE.",
+    "is_true": true,
+    "why": "Prakrit epigraphs began in the 3rd century BCE, Sanskrit appeared in the 2nd century CE (widespread in 4th to 5th), and regional languages in the 9th to 10th centuries."
+  },
+  {
+    "statement_id": "ANC-039",
+    "parent_topic": "Ancient Indian History",
+    "text": "Unlike Achaemenian Persian pillars built from stacked stone drums, each Ashokan pillar was carved from a single monolithic piece of buff sandstone.",
+    "is_true": true,
+    "why": "Every Mauryan pillar is a single monolithic shaft of polished buff Chunar sandstone, with only the sculpted animal capital joined at the top."
+  },
+  {
+    "statement_id": "ANC-040",
+    "parent_topic": "Ancient Indian History",
+    "text": "During the twelve-year famine in Magadha, Bhadrabahu led the Jaina migration to south India giving rise to the Digambaras, while Sthalabahu remained in Magadha leading the Svetambaras.",
+    "is_true": true,
+    "why": "Followers who migrated south under Bhadrabahu became Digambaras, while those who stayed back in Magadha under Sthalabahu became Svetambaras."
+  },
+  {
+    "statement_id": "ANC-041",
+    "parent_topic": "Ancient Indian History",
+    "text": "In Bihar and eastern Uttar Pradesh, burnt bricks and terracotta ringwells first came into widespread use in the sixth century BCE under Bimbisara.",
+    "is_true": false,
+    "why": "Although the NBPW phase began in the 6th century BCE, burnt bricks and ringwells appeared in north-eastern India in the 3rd century BCE during the Maurya period."
+  },
+  {
+    "statement_id": "ANC-042",
+    "parent_topic": "Ancient Indian History",
+    "text": "The correct chronological sequence of Central Asian peoples entering north-western India after 200 BCE is Indo-Greeks, followed by Parthians, then Sakas, and finally Kushans.",
+    "is_true": false,
+    "why": "The Sakas preceded the Parthians; the correct chronological sequence of post-Mauryan Central Asian invaders is Indo-Greeks, Sakas, Parthians (Pahlavas), and Kushans."
+  },
+  {
+    "statement_id": "ANC-043",
+    "parent_topic": "Ancient Indian History",
+    "text": "Sultan Firoz Shah Tughlaq's pandits failed to decipher the Ashokan pillars brought from Meerut and Topra, and Ashokan Brahmi was first deciphered by James Prinsep in 1837.",
+    "is_true": true,
+    "why": "Fourteenth-century court pandits could not read the Topra and Meerut pillars in Delhi; East India Company civil servant James Prinsep first deciphered Brahmi in 1837."
+  },
+  {
+    "statement_id": "ANC-044",
+    "parent_topic": "Ancient Indian History",
+    "text": "Rig Vedic hymns were recited with elaborate magical sacrificial formulae primarily to attain spiritual liberation (moksha) from the cycle of rebirth.",
+    "is_true": false,
+    "why": "Rig Vedic offerings lacked magical formulae and were aimed at material gains—children (praja), cattle (pasu), food, wealth, and health—not moksha or spiritual uplift."
+  },
+  {
+    "statement_id": "ANC-045",
+    "parent_topic": "Ancient Indian History",
+    "text": "Unlike contemporary Egypt which relied mainly on sun-dried bricks, Harappan cities used standardized burnt bricks on a far more extensive scale.",
+    "is_true": true,
+    "why": "Widespread use of burnt bricks distinguished Harappan urban architecture from Egypt's sun-dried mud bricks and even exceeded their scale in Mesopotamia."
+  },
+  {
+    "statement_id": "ANC-046",
+    "parent_topic": "Ancient Indian History",
+    "text": "The early Chola king Elara conquered Sri Lanka in the mid-second century BCE and ruled it for nearly fifty years, whereas Karikala founded Puhar around 100 CE.",
+    "is_true": true,
+    "why": "Elara ruled Sri Lanka for about 50 years in the mid-2nd century BCE, while Karikala flourished around 100 CE, founding Puhar and building the Kaveri embankment."
+  },
+  {
+    "statement_id": "ANC-047",
+    "parent_topic": "Ancient Indian History",
+    "text": "Emerging in peripheral land-grant areas from the fifth to seventh centuries CE, Tantricism admitted both women and sudras and permeated Jainism, Buddhism, Saivism, and Vaishnavism.",
+    "is_true": true,
+    "why": "Born from tribal acculturation in outlying land-grant zones like Assam, Bengal, and Orissa, Tantricism included women and sudras across all four major Indian religions."
+  },
+  {
+    "statement_id": "ANC-048",
+    "parent_topic": "Ancient Indian History",
+    "text": "In a Buddhist stupa, the semi-circular dome is called the anda, the balcony-like structure atop it is the harmika, and the cardinal gateways are called toranas.",
+    "is_true": true,
+    "why": "Stupa architecture consists of the anda mound topped by the harmika (abode of gods), a mast (yashti) with umbrella (chhatri), and carved cardinal toranas."
+  },
+  {
+    "statement_id": "ANC-049",
+    "parent_topic": "Ancient Indian History",
+    "text": "The Mahajanapada of Vatsa had its capital at Sravasti on the Sarayu river and was founded by the Lichchhavi clan after abandoning Vaisali.",
+    "is_true": false,
+    "why": "Vatsa had its capital at Kausambi on the Yamuna and was settled by a Kuru clan from Hastinapur; Sravasti was the capital of Kosala."
+  },
+  {
+    "statement_id": "ANC-050",
+    "parent_topic": "Ancient Indian History",
+    "text": "The Harappan script is an alphabetical script derived from Mesopotamian cuneiform and was first deciphered by Sir John Marshall in 1923.",
+    "is_true": false,
+    "why": "The Harappan script remains undeciphered; it is indigenous, unrelated to West Asian scripts, and mainly pictographic with 250 to 400 pictographs on short seals."
+  }
+]
