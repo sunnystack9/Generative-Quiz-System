@@ -148,6 +148,17 @@ def last_round_accuracy(history):
     return sum(1 for x in rows if x.get("selected") == x.get("correct_answer")) / len(rows)
 
 
+def revision_share(accuracy):
+    """Return a revision share inversely related to the previous round's accuracy.
+
+    Before the first round, use the 40% default. Afterwards, reserve 25% to 75%
+    of a round for revision: lower accuracy means more revision.
+    """
+    if accuracy is None:
+        return DEFAULT_REVIEW_SHARE
+    return min(0.75, max(0.25, 0.25 + 0.5 * (1.0 - accuracy)))
+
+
 def topic_weakness(history):
     """0 = fully mastered, 1 = fully weak. Recent answers count more; small samples
     are pulled toward a neutral value (same maths idea as app.py)."""
@@ -198,14 +209,15 @@ def weighted_sample(items, weights, k):
 
 def pick_adaptive(pool, history, n=10):
     """Same plan as app.py:
-    1) a guaranteed share of the round goes to statements you got wrong (share = your last round's score,
-       or 40% before your first round), most worrying first
+    1) a guaranteed share of the round goes to statements needing revision; lower
+       previous-round accuracy increases this share (40% before the first round)
     2) the rest comes from never-attempted statements, favouring weak and less-explored topics
     3) if one side runs short, the other side fills in; already-correct statements are the last resort."""
     new_items, revise, mastered, last_ts = split_pool(pool, history)
     accuracy = last_round_accuracy(history)
-    share = DEFAULT_REVIEW_SHARE if accuracy is None else accuracy
-    quota = min(round(n * share), len(revise))
+    share = revision_share(accuracy)
+    # Positive half-up rounding avoids Python's banker's-rounding surprises.
+    quota = min(int(n * share + 0.5), len(revise))
     session = revise[:quota]
 
     need = n - len(session)
@@ -730,7 +742,12 @@ if available:
         st.caption(f"{available} statements: {len(n_new)} new · {len(n_rev)} to revise · {len(n_mas)} answered correctly.")
         acc = last_round_accuracy(history)
         if acc is not None:
-            st.caption(f"📊 Your last round: {round(acc * 100)}%. About {round(acc * 100)}% of this round is reserved for revision (if enough wrong ones exist).")
+            planned_share = revision_share(acc)
+            st.caption(
+                f"📊 Your last round: {round(acc * 100)}%. "
+                f"About {round(planned_share * 100)}% of this round is planned for revision "
+                "(subject to the number of statements available)."
+            )
     else:
         st.caption(f"{available} statements available in your selection.")
     if adaptive and not user:
