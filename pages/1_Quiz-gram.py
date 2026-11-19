@@ -710,9 +710,6 @@ else:
     picked = st.multiselect("Pick topics (leave empty for all)", topics, format_func=lambda t: f"{t} ({counts[t]})")
     chosen_topics = picked or topics
 
-feedback = st.radio("Feedback", ["Instant (after each tap)", "Only at the end"], horizontal=True)
-show_tag = st.checkbox("Show topic tag on each statement", value=(mode == "One topic"),
-                       help="Turn off for a harder, more exam-like test.")
 adaptive = st.checkbox(
     "Prioritize wrong and not-yet-attempted statements (adaptive)", value=True,
     help="Reserves part of each round for statements you got wrong earlier, and fills the rest with "
@@ -720,7 +717,7 @@ adaptive = st.checkbox(
 )
 haptics = st.checkbox(
     "📳 Vibrate on a wrong answer", value=True,
-    help="Works on most Android phones, and only with Instant feedback (otherwise it would give the answer away).",
+    help="Works on most Android phones. iPhones do not support vibration.",
 )
 
 selected_pool = [s for s in pool if s["topic"] in chosen_topics]
@@ -748,8 +745,8 @@ if st.button("▶️ Start 10 statements", type="primary", use_container_width=T
         items = pick_balanced(pool, chosen_topics, 10)
     st.session_state.sc_round = {
         "items": items,
-        "instant": feedback.startswith("Instant"),
-        "show_tag": show_tag,
+        "instant": True,
+        "show_tag": True,
         "haptics": haptics,
         "round_id": datetime.now().isoformat(),
     }
