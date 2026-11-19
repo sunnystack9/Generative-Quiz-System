@@ -1,12 +1,14 @@
 """
 Quiz-gram -- 10 statements, one at a time, Instagram-style up/down scrolling.
 Put this file at:  pages/1_Quiz-gram.py  (next to app.py).
+Also put qg_loader.py in the root folder (next to app.py).
 
 What this version adds:
   * Adaptive picking (wrong + never-attempted statements), same idea as app.py
   * Auto-save (no copy/paste) through a small custom component
   * GitHub backup of your results (uses the same secrets as app.py)
   * Vibration on a wrong answer (Android phones, "Instant" feedback mode)
+  * Fix: component is now declared via qg_loader.py (avoids "module is None" error)
 """
 
 import base64
@@ -14,6 +16,7 @@ import json
 import os
 import random
 import re
+import sys
 import tempfile
 from collections import defaultdict
 from datetime import datetime
@@ -42,6 +45,10 @@ DATA_DIR = ROOT / "data"
 SAVE_FILE = ROOT / "statement_responses.json"  # separate file, so app.py's scoring is not disturbed
 BACKUP_PATH = "backup/statement_responses.json"  # where the GitHub copy lives
 COMP_DIR = ROOT / "quizgram_component"           # created automatically below
+
+# Make sure qg_loader.py (in the root folder) can be imported from inside pages/
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 DEFAULT_REVIEW_SHARE = 0.4   # used until you have finished one round (same as app.py)
 RECENCY_HALF_LIFE_DAYS = 30
@@ -568,9 +575,14 @@ def _ensure_component_files():
         index_file.write_text(COMPONENT_HTML, encoding="utf-8")
 
 
+_COMP_ERROR_TEXT = ""
 try:
     _ensure_component_files()
-    quizgram = components.declare_component("quizgram", path=str(COMP_DIR))
+    # The component must be declared from a normal importable module (qg_loader.py in the
+    # root folder), not from a script inside pages/ -- otherwise Streamlit raises
+    # "RuntimeError: module is None".
+    from qg_loader import make_component
+    quizgram = make_component(COMP_DIR)
 except Exception as _comp_error:
     quizgram = None
     _COMP_ERROR_TEXT = f"{type(_comp_error).__name__}: {_comp_error}"
