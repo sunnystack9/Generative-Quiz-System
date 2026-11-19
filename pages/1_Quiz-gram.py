@@ -1,17 +1,19 @@
 """
 Quiz-gram -- 10 statements, one at a time, Instagram-style up/down scrolling.
 Put this file at:  pages/1_Quiz-gram.py  (next to app.py).
-Also put qg_loader.py in the root folder (next to app.py).
+This is a COMPLETE, single-file version: it creates its own helper files (qg_loader.py and the
+quizgram_component folder) automatically in the root folder, so there is nothing else to upload.
 
 What this version adds:
   * Adaptive picking (wrong + never-attempted statements), same idea as app.py
   * Auto-save (no copy/paste) through a small custom component
   * GitHub backup of your results (uses the same secrets as app.py)
   * Vibration on a wrong answer (Android phones, "Instant" feedback mode)
-  * Fix: component is now declared via qg_loader.py (avoids "module is None" error)
+  * Fix: component is declared through an auto-created qg_loader.py (avoids "module is None" error)
 """
 
 import base64
+import importlib
 import json
 import os
 import random
@@ -568,19 +570,36 @@ send('streamlit:componentReady', {apiVersion: 1});
 """
 
 
+LOADER_CODE = '''"""
+Helper for Quiz-gram (created automatically by pages/1_Quiz-gram.py -- no need to edit it).
+Streamlit's declare_component() must be called from a normal importable module,
+not from a script inside pages/ (otherwise: RuntimeError: module is None).
+"""
+
+import streamlit.components.v1 as components
+
+
+def make_component(path):
+    return components.declare_component("quizgram", path=str(path))
+'''
+
+
 def _ensure_component_files():
+    """Creates (or refreshes) the component page and the small loader module in the root folder."""
     COMP_DIR.mkdir(exist_ok=True)
     index_file = COMP_DIR / "index.html"
     if not index_file.exists() or index_file.read_text(encoding="utf-8") != COMPONENT_HTML:
         index_file.write_text(COMPONENT_HTML, encoding="utf-8")
 
+    loader_file = ROOT / "qg_loader.py"
+    if not loader_file.exists() or loader_file.read_text(encoding="utf-8") != LOADER_CODE:
+        loader_file.write_text(LOADER_CODE, encoding="utf-8")
+    importlib.invalidate_caches()
+
 
 _COMP_ERROR_TEXT = ""
 try:
     _ensure_component_files()
-    # The component must be declared from a normal importable module (qg_loader.py in the
-    # root folder), not from a script inside pages/ -- otherwise Streamlit raises
-    # "RuntimeError: module is None".
     from qg_loader import make_component
     quizgram = make_component(COMP_DIR)
 except Exception as _comp_error:
