@@ -1249,21 +1249,33 @@ def _github_config():
 
 
 def github_restore_if_needed():
+    """Restores any missing local state file from GitHub.
+
+    Two places are used, matching where each file is actually SAVED:
+      - profiles.json and responses.json -> the "data" branch (the newer
+        milestone-save path).
+      - every file in _BACKUP_FILES -> the default branch (main), inside
+        the backup/ folder, exactly as github_backup() writes them.
+    Order matters: the data-branch copy of responses.json is tried first;
+    if it isn't there, the loop falls back to backup/responses.json on
+    main, because a file that now exists locally is skipped.
+    """
     cfg = _github_config()
     if not cfg:
         return
     restore_files = [
-        (PROFILES_FILE, "profiles.json"),
-        (RESPONSES_FILE, "responses.json"),
-    ] + _BACKUP_FILES
-    for local_path, repo_path in restore_files:
+        (PROFILES_FILE, "profiles.json", "data"),
+        (RESPONSES_FILE, "responses.json", "data"),
+    ] + [(local_path, repo_path, None) for local_path, repo_path in _BACKUP_FILES]
+    for local_path, repo_path, branch in restore_files:
         if local_path.exists():
             continue
         try:
             url = f"https://api.github.com/repos/{cfg['repo']}/contents/{repo_path}"
-            resp = requests.get(
-                url, headers=cfg["headers"], params={"ref": "data"}, timeout=10
-            )
+            get_args = {"headers": cfg["headers"], "timeout": 10}
+            if branch:
+                get_args["params"] = {"ref": branch}
+            resp = requests.get(url, **get_args)
             if resp.status_code == 200:
                 content_b64 = resp.json().get("content", "").replace("\n", "")
                 content = base64.b64decode(content_b64).decode("utf-8")
