@@ -47,6 +47,10 @@ DATA_DIR = ROOT / "data"
 SAVE_FILE = ROOT / "statement_responses.json"  # separate file, so app.py's scoring is not disturbed
 BACKUP_PATH = "backup/statement_responses.json"  # where the GitHub copy lives
 COMP_DIR = ROOT / "quizgram_component"           # created automatically below
+BOOKMARK_FILE = ROOT / "bookmarked_statements.json"            # your starred statements
+BOOKMARK_BACKUP_PATH = "backup/bookmarked_statements.json"     # GitHub copy of the above
+# Every file that is backed up to / restored from GitHub: (local file, GitHub path)
+BACKUP_FILES = [(SAVE_FILE, BACKUP_PATH), (BOOKMARK_FILE, BOOKMARK_BACKUP_PATH)]
 
 # Make sure qg_loader.py (in the root folder) can be imported from inside pages/
 if str(ROOT) not in sys.path:
@@ -148,17 +152,6 @@ def last_round_accuracy(history):
     return sum(1 for x in rows if x.get("selected") == x.get("correct_answer")) / len(rows)
 
 
-def revision_share(accuracy):
-    """Return a revision share inversely related to the previous round's accuracy.
-
-    Before the first round, use the 40% default. Afterwards, reserve 25% to 75%
-    of a round for revision: lower accuracy means more revision.
-    """
-    if accuracy is None:
-        return DEFAULT_REVIEW_SHARE
-    return min(0.75, max(0.25, 0.25 + 0.5 * (1.0 - accuracy)))
-
-
 def topic_weakness(history):
     """0 = fully mastered, 1 = fully weak. Recent answers count more; small samples
     are pulled toward a neutral value (same maths idea as app.py)."""
@@ -209,15 +202,14 @@ def weighted_sample(items, weights, k):
 
 def pick_adaptive(pool, history, n=10):
     """Same plan as app.py:
-    1) a guaranteed share of the round goes to statements needing revision; lower
-       previous-round accuracy increases this share (40% before the first round)
+    1) a guaranteed share of the round goes to statements you got wrong (share = your last round's score,
+       or 40% before your first round), most worrying first
     2) the rest comes from never-attempted statements, favouring weak and less-explored topics
     3) if one side runs short, the other side fills in; already-correct statements are the last resort."""
     new_items, revise, mastered, last_ts = split_pool(pool, history)
     accuracy = last_round_accuracy(history)
-    share = revision_share(accuracy)
-    # Positive half-up rounding avoids Python's banker's-rounding surprises.
-    quota = min(int(n * share + 0.5), len(revise))
+    share = DEFAULT_REVIEW_SHARE if accuracy is None else accuracy
+    quota = min(round(n * share), len(revise))
     session = revise[:quota]
 
     need = n - len(session)
@@ -304,6 +296,75 @@ def valid_code(code, items):
     return bool(re.fullmatch(r"[TFS]+", code)) and len(code) == len(items)
 
 
+# ---------- Bookmarked statements ----------
+# Saved as {"your name": {"statement_id": "time you starred it", ...}}
+
+def _locked_update(path, default, mutate):
+    """Opens a JSON file safely (with a lock), lets `mutate(data)` change it,
+    and saves it only if mutate() says something changed (returns True)."""
+    lock_path = path.with_name(path.name + ".lock")
+    with open(lock_path, "a+") as lock_f:
+        if fcntl:
+            fcntl.flock(lock_f, fcntl.LOCK_EX)
+        try:
+            data = default
+            if path.exists():
+                text = path.read_text(encoding="utf-8").strip()
+                data = json.loads(text) if text else default
+            if not isinstance(data, dict):
+                data = default
+            changed = mutate(data)
+            if changed:
+                fd, tmp = tempfile.mkstemp(dir=str(path.parent), suffix=".tmp")
+                with os.fdopen(fd, "w", encoding="utf-8") as tf:
+                    json.dump(data, tf, indent=2, ensure_ascii=False)
+                os.replace(tmp, path)
+            return changed
+        finally:
+            if fcntl:
+                fcntl.flock(lock_f, fcntl.LOCK_UN)
+
+
+def load_bookmarks(user):
+    """Dict: statement_id -> time starred, for this user."""
+    if not user or not BOOKMARK_FILE.exists():
+        return {}
+    try:
+        text = BOOKMARK_FILE.read_text(encoding="utf-8").strip()
+        data = json.loads(text) if text else {}
+    except Exception:
+        return {}
+    mine = data.get(user, {}) if isinstance(data, dict) else {}
+    return mine if isinstance(mine, dict) else {}
+
+
+def sync_round_bookmarks(user, round_ids, marked_ids):
+    """Makes the saved bookmarks match the stars in this round.
+    Only statements from this round are touched, so your older bookmarks stay safe."""
+    def mutate(data):
+        mine = data.setdefault(user, {})
+        changed = False
+        for sid in round_ids:
+            if sid in marked_ids and sid not in mine:
+                mine[sid] = datetime.now().isoformat()
+                changed = True
+            elif sid not in marked_ids and sid in mine:
+                del mine[sid]
+                changed = True
+        return changed
+    return _locked_update(BOOKMARK_FILE, {}, mutate)
+
+
+def remove_bookmark(user, statement_id):
+    def mutate(data):
+        mine = data.get(user, {})
+        if isinstance(mine, dict) and statement_id in mine:
+            del mine[statement_id]
+            return True
+        return False
+    return _locked_update(BOOKMARK_FILE, {}, mutate)
+
+
 # ---------- GitHub backup (uses the same secrets as app.py) ----------
 
 def _github_cfg():
@@ -321,44 +382,63 @@ def _github_cfg():
 
 
 def github_restore_if_needed():
-    """If the local results file is missing (e.g. after a restart), bring it back from GitHub."""
-    cfg = _github_cfg()
-    if not cfg or SAVE_FILE.exists():
-        return
-    try:
-        url = f"https://api.github.com/repos/{cfg['repo']}/contents/{BACKUP_PATH}"
-        resp = requests.get(url, headers=cfg["headers"], timeout=10)
-        if resp.status_code == 200:
-            content = base64.b64decode(resp.json().get("content", "").replace("\n", "")).decode("utf-8")
-            SAVE_FILE.write_text(content, encoding="utf-8")
-    except Exception:
-        pass
-
-
-def github_backup():
-    """Returns (True, "Success") or (False, "what went wrong"). Never crashes the page."""
+    """If a local file is missing (e.g. after a restart), bring it back from GitHub."""
     cfg = _github_cfg()
     if not cfg:
-        return False, "GitHub backup is not set up (github_token / github_repo missing in secrets)."
-    if not SAVE_FILE.exists():
-        return False, "Nothing to back up yet."
+        return
+    for local_path, repo_path in BACKUP_FILES:
+        if local_path.exists():
+            continue
+        try:
+            url = f"https://api.github.com/repos/{cfg['repo']}/contents/{repo_path}"
+            resp = requests.get(url, headers=cfg["headers"], timeout=10)
+            if resp.status_code == 200:
+                content = base64.b64decode(resp.json().get("content", "").replace("\n", "")).decode("utf-8")
+                local_path.write_text(content, encoding="utf-8")
+        except Exception:
+            pass
+
+
+def _push_file(cfg, local_path, repo_path):
+    """Uploads one file to GitHub. Returns (True, "Success") or (False, "what went wrong")."""
     try:
-        b64 = base64.b64encode(SAVE_FILE.read_text(encoding="utf-8").encode("utf-8")).decode("ascii")
-        url = f"https://api.github.com/repos/{cfg['repo']}/contents/{BACKUP_PATH}"
+        b64 = base64.b64encode(local_path.read_text(encoding="utf-8").encode("utf-8")).decode("ascii")
+        url = f"https://api.github.com/repos/{cfg['repo']}/contents/{repo_path}"
         for _ in range(3):  # retry if another save happened at the same moment
             get_resp = requests.get(url, headers=cfg["headers"], timeout=10)
             sha = get_resp.json().get("sha") if get_resp.status_code == 200 else None
-            payload = {"message": f"Quiz-gram backup - {datetime.now().isoformat()}", "content": b64}
+            payload = {"message": f"Quiz-gram backup {local_path.name} - {datetime.now().isoformat()}", "content": b64}
             if sha:
                 payload["sha"] = sha
             put_resp = requests.put(url, headers=cfg["headers"], json=payload, timeout=10)
             if put_resp.status_code in (200, 201):
                 return True, "Success"
             if put_resp.status_code != 409:
-                return False, f"GitHub returned {put_resp.status_code}."
+                return False, f"GitHub returned {put_resp.status_code} for {local_path.name}."
         return False, "GitHub kept reporting write conflicts. Try again in a moment."
     except Exception as e:
         return False, f"{type(e).__name__}: {e}"
+
+
+def github_backup():
+    """Backs up your results AND your bookmarks. Returns (True, "Success") or (False, "what went wrong").
+    Never crashes the page."""
+    cfg = _github_cfg()
+    if not cfg:
+        return False, "GitHub backup is not set up (github_token / github_repo missing in secrets)."
+    failures, any_file = [], False
+    for local_path, repo_path in BACKUP_FILES:
+        if not local_path.exists():
+            continue
+        any_file = True
+        ok, msg = _push_file(cfg, local_path, repo_path)
+        if not ok:
+            failures.append(msg)
+    if not any_file:
+        return False, "Nothing to back up yet."
+    if failures:
+        return False, " ".join(failures)
+    return True, "Success"
 
 
 # ---------- The scrolling quiz: a small custom component ----------
@@ -377,7 +457,7 @@ COMPONENT_HTML = r"""<!DOCTYPE html>
   .feed { height: 100vh; overflow-y: scroll; scroll-snap-type: y mandatory; scrollbar-width: none; }
   .feed::-webkit-scrollbar { display: none; }
 
-  .stories { position: absolute; top: 8px; left: 14px; right: 14px; display: flex; gap: 4px; z-index: 5; }
+  .stories { position: absolute; top: 8px; left: 6px; right: 6px; display: flex; gap: 4px; z-index: 5; }
   .seg { flex: 1; height: 4px; border-radius: 3px; background: rgba(15, 23, 42, 0.18); transition: all .2s; }
   .seg.cur { height: 6px; margin-top: -1px; background: rgba(15, 23, 42, 0.45); }
   .seg.done { background: #3b82f6; }
@@ -385,7 +465,7 @@ COMPONENT_HTML = r"""<!DOCTYPE html>
   .seg.no { background: #ef4444; }
 
   .card { height: 100vh; scroll-snap-align: start; display: flex; flex-direction: column;
-          padding: 26px 14px 12px 14px; }
+          padding: 26px 4px 12px 4px; }
   .g0 { background: linear-gradient(160deg, #fdf2f8, #eef2ff); }
   .g1 { background: linear-gradient(160deg, #ecfeff, #f0fdf4); }
   .g2 { background: linear-gradient(160deg, #fff7ed, #fef2f2); }
@@ -396,12 +476,17 @@ COMPONENT_HTML = r"""<!DOCTYPE html>
   .tag { background: white; color: #7c3aed; border-radius: 999px; padding: 4px 12px;
          font-size: 12px; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
 
+  .right { display: flex; align-items: center; gap: 8px; }
+  .star { background: white; color: #94a3b8; border: none; border-radius: 999px; width: 38px; height: 32px;
+          font-size: 20px; line-height: 1; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .star.on { color: #f59e0b; }
+
   .body { flex: 1; overflow-y: auto; min-height: 0; scrollbar-width: none; }
   .body::-webkit-scrollbar { display: none; }
-  .post { background: white; border-radius: 18px; padding: 18px; box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08); }
+  .post { background: white; border-radius: 18px; padding: 18px 14px; box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08); }
   .text { font-size: 18px; line-height: 1.55; text-align: justify; text-justify: inter-word; }
 
-  .fb { margin-top: 12px; padding: 12px 14px; border-radius: 14px; display: none; line-height: 1.5; font-size: 15px;
+  .fb { margin-top: 12px; padding: 12px 14px; width: 100%; border-radius: 14px; display: none; line-height: 1.5; font-size: 15px;
         text-align: justify; text-justify: inter-word; }
   .good { background: #dcfce7; color: #166534; display: block; }
   .bad { background: #fee2e2; color: #991b1b; display: block; }
@@ -434,6 +519,7 @@ const feed = document.getElementById('feed');
 const storiesBar = document.getElementById('stories');
 let currentRound = null, data = [], choices = [], segs = [];
 let INSTANT = true, SHOW_TAG = true, HAPTICS = true, sent = false, lastStatus = '';
+let marked = new Set(), bmSeq = 0;   // marked = ids of starred statements
 
 function esc(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -464,6 +550,12 @@ function refresh() {
 }
 feed.addEventListener('scroll', refresh);
 
+function sendBookmarks() {
+  bmSeq++;
+  const ids = data.filter(x => marked.has(x.id)).map(x => x.id);
+  send('streamlit:setComponentValue', {value: {type: 'bookmarks', ids: ids, seq: bmSeq}, dataType: 'json'});
+}
+
 function applyStatus() {
   const el = document.getElementById('savestat');
   if (!el) return;
@@ -474,6 +566,7 @@ function applyStatus() {
 function build(a) {
   data = a.items || [];
   INSTANT = !!a.instant; SHOW_TAG = !!a.show_tag; HAPTICS = !!a.haptics;
+  marked = new Set(a.bookmarked || []);
   choices = new Array(data.length).fill(null);
   sent = false; lastStatus = '';
   feed.innerHTML = ''; storiesBar.innerHTML = '';
@@ -491,14 +584,26 @@ function build(a) {
     card.className = 'card g' + (i % 4);
     card.innerHTML =
       '<div class="meta"><span class="count">' + (i + 1) + ' / ' + data.length + '</span>' +
-      (SHOW_TAG ? '<span class="tag">' + esc(s.topic) + '</span>' : '<span></span>') + '</div>' +
+      '<span class="right"><button class="star" type="button" aria-label="Bookmark this statement">☆</button>' +
+      (SHOW_TAG ? '<span class="tag">' + esc(s.topic) + '</span>' : '') + '</span></div>' +
       '<div class="body"><div class="post"><div class="text">' + esc(s.text) + '</div></div>' +
       '<div class="fb"></div></div>' +
       '<div class="btns"><button class="r">✅ Right</button><button class="w">❌ Wrong</button></div>' +
       '<div class="hint">⬆️ Swipe up for next</div>';
     const fb = card.querySelector('.fb');
-    const btns = card.querySelectorAll('button');
-    const rb = btns[0], wb = btns[1];
+    const rb = card.querySelector('.btns .r'), wb = card.querySelector('.btns .w');
+    const star = card.querySelector('.star');
+    function paintStar() {
+      const on = marked.has(s.id);
+      star.textContent = on ? '★' : '☆';
+      star.classList.toggle('on', on);
+    }
+    paintStar();
+    star.onclick = () => {
+      if (marked.has(s.id)) marked.delete(s.id); else marked.add(s.id);
+      paintStar();
+      sendBookmarks();
+    };
 
     function pick(c) {
       choices[i] = c;
@@ -624,7 +729,8 @@ except Exception as _comp_error:
 st.markdown(
     """
     <style>
-    .block-container { padding-top: 4rem !important; padding-bottom: 1rem !important; }
+    .block-container { padding-top: 4rem !important; padding-bottom: 1rem !important;
+                       padding-left: 0.4rem !important; padding-right: 0.4rem !important; }
     .qg-title { font-size: 1.9rem; font-weight: 800; margin: 0 0 0.5rem 0;
                 line-height: 1.4; text-align: center; }
     .qg-grad { display: inline-block; padding: 0 0.1em 0.12em 0.1em;
@@ -662,8 +768,19 @@ if rnd:
     result = quizgram(
         items=rnd["items"], instant=rnd["instant"], show_tag=rnd["show_tag"], haptics=rnd["haptics"],
         round_id=rnd["round_id"], save_status=st.session_state.get(status_key, ""),
+        bookmarked=list(load_bookmarks(user).keys()),
         key=f"qg_{rid}", default=None,
     )
+
+    # Star taps: the quiz sends the full list of starred statements of this round
+    if isinstance(result, dict) and result.get("type") == "bookmarks":
+        round_ids = [s["id"] for s in rnd["items"]]
+        starred = {x for x in result.get("ids", []) if x in round_ids}
+        if user:
+            if sync_round_bookmarks(user, round_ids, starred):
+                st.session_state["sc_bm_dirty"] = True   # needs a GitHub backup later
+        else:
+            st.caption("⚠️ Bookmarks are not saved. Open the main app and choose your profile first.")
 
     # Auto-save: runs once, right after you tap "Show my result"
     if (isinstance(result, dict) and result.get("round_id") == rnd["round_id"]
@@ -705,6 +822,8 @@ if rnd:
                     st.rerun()
 
     if st.button("🔄 New round", type="primary", use_container_width=True):
+        if st.session_state.pop("sc_bm_dirty", False):
+            github_backup()   # make sure new bookmarks are backed up too
         st.session_state.pop("sc_round", None)
         st.rerun()
     st.stop()
@@ -742,12 +861,7 @@ if available:
         st.caption(f"{available} statements: {len(n_new)} new · {len(n_rev)} to revise · {len(n_mas)} answered correctly.")
         acc = last_round_accuracy(history)
         if acc is not None:
-            planned_share = revision_share(acc)
-            st.caption(
-                f"📊 Your last round: {round(acc * 100)}%. "
-                f"About {round(planned_share * 100)}% of this round is planned for revision "
-                "(subject to the number of statements available)."
-            )
+            st.caption(f"📊 Your last round: {round(acc * 100)}%. About {round(acc * 100)}% of this round is reserved for revision (if enough wrong ones exist).")
     else:
         st.caption(f"{available} statements available in your selection.")
     if adaptive and not user:
@@ -768,3 +882,23 @@ if st.button("▶️ Start 10 statements", type="primary", use_container_width=T
         "round_id": datetime.now().isoformat(),
     }
     st.rerun()
+
+# ---- My bookmarked statements ----
+my_bookmarks = load_bookmarks(user)
+if my_bookmarks:
+    by_id = {s["id"]: s for s in pool}
+    with st.expander(f"⭐ My bookmarked statements ({len(my_bookmarks)})"):
+        for sid in sorted(my_bookmarks, key=lambda k: my_bookmarks[k], reverse=True):
+            s = by_id.get(sid)
+            with st.container(border=True):
+                if s:
+                    st.caption(s["topic"])
+                    st.write(s["text"])
+                    st.markdown(("✅ **RIGHT**" if s["is_true"] else "❌ **WRONG**")
+                                + (f" — {s['why']}" if s.get("why") else ""))
+                else:
+                    st.caption(f"{sid} — this statement is no longer in the data files.")
+                if st.button("Remove bookmark", key=f"sc_rm_{sid}", use_container_width=True):
+                    remove_bookmark(user, sid)
+                    github_backup()
+                    st.rerun()
