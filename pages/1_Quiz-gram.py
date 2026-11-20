@@ -500,6 +500,8 @@ COMPONENT_HTML = r"""<!DOCTYPE html>
   .btns button.sel { box-shadow: 0 0 0 3px white, 0 0 0 6px #0f172a; }
   .btns button:disabled:not(.sel) { opacity: 0.4; }
   .btns .show { background: linear-gradient(135deg, #a855f7, #3b82f6); }
+  .btns.mid { margin-top: 70px; }
+  .btns.mid button { padding: 22px 8px; font-size: 19px; }
   .hint { text-align: center; color: #94a3b8; font-size: 12px; margin-top: 8px; }
 
   .savestat { margin-top: 10px; padding: 10px 12px; border-radius: 10px; background: white; color: #334155;
@@ -632,8 +634,8 @@ function build(a) {
   last.innerHTML =
     '<div class="meta"><span class="count">🏁 Finish</span><span></span></div>' +
     '<div class="body"><div class="post"><div class="text">All done! Tap the button to see your result. It is saved automatically.</div></div>' +
-    '<div class="fb" id="result"></div></div>' +
-    '<div class="btns"><button class="show" id="show">Show my result</button></div>';
+    '<div class="btns mid" id="showwrap"><button class="show" id="show">Show my result</button></div>' +
+    '<div class="fb" id="result"></div></div>';
   feed.appendChild(last);
   refresh();
 
@@ -660,6 +662,7 @@ function build(a) {
     const res = document.getElementById('result');
     res.className = 'fb good';
     res.innerHTML = h;
+    document.getElementById('showwrap').style.display = 'none';   // button is not needed anymore
     if (!sent) {
       sent = true;
       send('streamlit:setComponentValue', {value: {round_id: currentRound, code: code}, dataType: 'json'});
