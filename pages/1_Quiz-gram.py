@@ -731,6 +731,18 @@ st.markdown(
     <style>
     .block-container { padding-top: 4rem !important; padding-bottom: 1rem !important;
                        padding-left: 0.4rem !important; padding-right: 0.4rem !important; }
+    /* Green buttons (Start 10 statements, Home) */
+    button[data-testid="stBaseButton-primary"], button[kind="primary"] {
+        background-color: #16a34a !important; border-color: #16a34a !important; color: white !important; }
+    button[data-testid="stBaseButton-primary"]:hover, button[kind="primary"]:hover {
+        background-color: #15803d !important; border-color: #15803d !important; color: white !important; }
+    button[data-testid="stBaseButton-primary"]:active, button[kind="primary"]:active {
+        background-color: #166534 !important; border-color: #166534 !important; color: white !important; }
+    /* Green selection icons (ticked checkbox, chosen radio circle) */
+    label[data-baseweb="checkbox"]:has(input:checked) > span:first-child {
+        background-color: #16a34a !important; border-color: #16a34a !important; }
+    label[data-baseweb="radio"]:has(input:checked) > div:first-child {
+        background-color: #16a34a !important; border-color: #16a34a !important; }
     .qg-title { font-size: 1.9rem; font-weight: 800; margin: 0 0 0.5rem 0;
                 line-height: 1.4; text-align: center; }
     .qg-grad { display: inline-block; padding: 0 0.1em 0.12em 0.1em;
@@ -821,10 +833,10 @@ if rnd:
                     )
                     st.rerun()
 
-    if st.button("🔄 New round", type="primary", use_container_width=True):
+    if st.button("🏠 Home", type="primary", use_container_width=True):
         if st.session_state.pop("sc_bm_dirty", False):
             github_backup()   # make sure new bookmarks are backed up too
-        st.session_state.pop("sc_round", None)
+        st.session_state.pop("sc_round", None)   # no round running = Quiz-gram home (start screen)
         st.rerun()
     st.stop()
 
@@ -846,10 +858,7 @@ adaptive = st.checkbox(
     help="Reserves part of each round for statements you got wrong earlier, and fills the rest with "
          "statements you have not seen yet, favouring your weaker topics. Turn off for plain mixing.",
 )
-haptics = st.checkbox(
-    "📳 Vibrate on a wrong answer", value=True,
-    help="Works on most Android phones. iPhones do not support vibration.",
-)
+haptics = True   # vibration on a wrong answer is always on (works on most Android phones)
 
 selected_pool = [s for s in pool if s["topic"] in chosen_topics]
 available = len(selected_pool)
