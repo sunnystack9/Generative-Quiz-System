@@ -538,5 +538,95 @@
     "selected": "T",
     "correct_answer": "T",
     "timestamp": "2026-11-20T09:02:41.641503"
+  },
+  {
+    "user": "Sunny",
+    "round_id": "2026-11-20T11:28:19.360505",
+    "statement_id": "ANC-034",
+    "topic": "Ancient History",
+    "selected": "T",
+    "correct_answer": "F",
+    "timestamp": "2026-11-20T11:35:28.874544"
+  },
+  {
+    "user": "Sunny",
+    "round_id": "2026-11-20T11:28:19.360505",
+    "statement_id": "ANC-071",
+    "topic": "Ancient History",
+    "selected": "F",
+    "correct_answer": "T",
+    "timestamp": "2026-11-20T11:35:28.874544"
+  },
+  {
+    "user": "Sunny",
+    "round_id": "2026-11-20T11:28:19.360505",
+    "statement_id": "NEW-HIS-014#2",
+    "topic": "Ancient History",
+    "selected": "T",
+    "correct_answer": "T",
+    "timestamp": "2026-11-20T11:35:28.874544"
+  },
+  {
+    "user": "Sunny",
+    "round_id": "2026-11-20T11:28:19.360505",
+    "statement_id": "ANC-043",
+    "topic": "Ancient History",
+    "selected": "T",
+    "correct_answer": "T",
+    "timestamp": "2026-11-20T11:35:28.874544"
+  },
+  {
+    "user": "Sunny",
+    "round_id": "2026-11-20T11:28:19.360505",
+    "statement_id": "ANC-026",
+    "topic": "Ancient History",
+    "selected": "T",
+    "correct_answer": "T",
+    "timestamp": "2026-11-20T11:35:28.874544"
+  },
+  {
+    "user": "Sunny",
+    "round_id": "2026-11-20T11:28:19.360505",
+    "statement_id": "ANC-001",
+    "topic": "Ancient History",
+    "selected": "T",
+    "correct_answer": "F",
+    "timestamp": "2026-11-20T11:35:28.874544"
+  },
+  {
+    "user": "Sunny",
+    "round_id": "2026-11-20T11:28:19.360505",
+    "statement_id": "ANC-072",
+    "topic": "Ancient History",
+    "selected": "T",
+    "correct_answer": "F",
+    "timestamp": "2026-11-20T11:35:28.874544"
+  },
+  {
+    "user": "Sunny",
+    "round_id": "2026-11-20T11:28:19.360505",
+    "statement_id": "ANC-087",
+    "topic": "Ancient History",
+    "selected": "T",
+    "correct_answer": "T",
+    "timestamp": "2026-11-20T11:35:28.874544"
+  },
+  {
+    "user": "Sunny",
+    "round_id": "2026-11-20T11:28:19.360505",
+    "statement_id": "ANC-096",
+    "topic": "Ancient History",
+    "selected": "T",
+    "correct_answer": "F",
+    "timestamp": "2026-11-20T11:35:28.874544"
+  },
+  {
+    "user": "Sunny",
+    "round_id": "2026-11-20T11:28:19.360505",
+    "statement_id": "ANC-052",
+    "topic": "Ancient History",
+    "selected": "F",
+    "correct_answer": "F",
+    "timestamp": "2026-11-20T11:35:28.874544"
   }
 ]
