@@ -764,6 +764,16 @@ if quizgram is None:
 
 user = st.session_state.get("current_user") or st.query_params.get("user", "")
 
+# Login is required: without a profile, show a message and stop here
+if not user:
+    st.info("🔒 Please log in first. Open the main app, choose your profile, and then come back to Quiz-gram.")
+    if st.button("➡️ Go to login", type="primary", use_container_width=True):
+        try:
+            st.switch_page("app.py")   # the main app's login screen
+        except Exception:
+            st.warning("Could not open the main app automatically. Please open it from the menu (top-left arrow).")
+    st.stop()
+
 # Bring results back from GitHub once per visit, if the local file went missing after a restart
 if "_sc_restored" not in st.session_state:
     github_restore_if_needed()
