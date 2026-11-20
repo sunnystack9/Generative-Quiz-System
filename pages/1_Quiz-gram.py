@@ -753,7 +753,6 @@ st.markdown(
                -webkit-background-clip: text; background-clip: text;
                -webkit-text-fill-color: transparent; color: transparent; }
     </style>
-    <div class="qg-title"><span class="qg-grad">Quiz-gram</span></div>
     """,
     unsafe_allow_html=True,
 )
@@ -762,17 +761,25 @@ if quizgram is None:
     st.error("Could not set up the quiz component: " + _COMP_ERROR_TEXT)
     st.stop()
 
-user = st.session_state.get("current_user") or st.query_params.get("user", "")
+# ---- Login: the SAME login screen (profiles + PIN) as the main app ----
+# The main app's login function is reused, so a profile created or chosen here also works there,
+# and the other way round. Your login is remembered while you move between the pages.
+if not st.session_state.get("current_user"):
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
+    try:
+        import app as main_app
+    except Exception as e:
+        st.error(f"Could not load the main app's login ({type(e).__name__}: {e}).")
+        st.stop()
+    main_app.get_current_user()   # shows the login screen and stops until you are logged in
 
-# Login is required: without a profile, show a message and stop here
-if not user:
-    st.info("🔒 Please log in first. Open the main app, choose your profile, and then come back to Quiz-gram.")
-    if st.button("➡️ Go to login", type="primary", use_container_width=True):
-        try:
-            st.switch_page("app.py")   # the main app's login screen
-        except Exception:
-            st.warning("Could not open the main app automatically. Please open it from the menu (top-left arrow).")
-    st.stop()
+user = st.session_state["current_user"]
+
+st.markdown(
+    '<div class="qg-title"><span class="qg-grad">Quiz-gram</span></div>',
+    unsafe_allow_html=True,
+)
 
 # Bring results back from GitHub once per visit, if the local file went missing after a restart
 if "_sc_restored" not in st.session_state:
