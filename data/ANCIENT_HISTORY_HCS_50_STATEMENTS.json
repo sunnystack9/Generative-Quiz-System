@@ -1,0 +1,352 @@
+[
+  {
+    "statement_id": "ANC-051",
+    "parent_topic": "Ancient History",
+    "text": "The Neolithic settlement of Burzahom in Kashmir is notable for subterranean pit dwellings, and its excavations have also yielded evidence of trepanation of human skulls.",
+    "is_true": true,
+    "why": "Burzahom documents a distinctive pit-dwelling phase in which houses were cut into the natural soil. Human skulls showing trepanation have also been reported from the site, making it important for the study of Neolithic habitation and prehistoric medical practices in Kashmir."
+  },
+  {
+    "statement_id": "ANC-052",
+    "parent_topic": "Ancient History",
+    "text": "Chirand, in Saran district of Bihar, is particularly noted for subterranean dwelling pits cut into the soil, comparable to those that define the Neolithic settlement of Burzahom.",
+    "is_true": false,
+    "why": "Subterranean pit dwellings are a distinctive feature of Burzahom in Kashmir, not the defining feature of Chirand. Chirand's Neolithic levels in Bihar are especially important for their unusually rich collection of bone and antler tools, including celts, scrapers, chisels, needles and borers."
+  },
+  {
+    "statement_id": "ANC-053",
+    "parent_topic": "Ancient History",
+    "text": "The Ahar-Banas Chalcolithic culture of south-eastern Rajasthan is identified in part by its characteristic black-and-red ware painted with white designs; Ahar, its type-site, lies near Udaipur.",
+    "is_true": true,
+    "why": "Ahar, near Udaipur, is the type-site of the Banas or Ahar culture. White-painted black-and-red pottery is one of its diagnostic ceramic features, and the site also provides evidence of copper-working and settled Chalcolithic life in south-eastern Rajasthan."
+  },
+  {
+    "statement_id": "ANC-054",
+    "parent_topic": "Ancient History",
+    "text": "The Ganeshwar-Jodhpura culture of north-eastern Rajasthan developed close to the Khetri copper belt and is known for copper artefacts, but its excavated metal assemblage is dominated by iron implements rather than copper objects.",
+    "is_true": false,
+    "why": "The decisive error is the claim about iron. Ganeshwar and related sites near the Khetri copper belt are noted for abundant copper objects such as arrowheads, spearheads, chisels, fish-hooks and ornaments. The culture is important for evidence of copper production and exchange, not for an iron-dominated assemblage."
+  },
+  {
+    "statement_id": "ANC-055",
+    "parent_topic": "Ancient History",
+    "text": "At Dholavira, the fortified urban settlement is commonly described as having a citadel comprising a Castle and Bailey, a Middle Town and a Lower Town, while an elaborate system of reservoirs reflects adaptation to a water-scarce environment.",
+    "is_true": true,
+    "why": "Dholavira in Khadir Bet, Kutch, had three principal urban divisions: the citadel (with Castle and Bailey), Middle Town and Lower Town. Its reservoirs, channels and water-harvesting arrangements are among the site's most distinctive features and show sophisticated planning in a region with limited perennial water."
+  },
+  {
+    "statement_id": "ANC-056",
+    "parent_topic": "Ancient History",
+    "text": "The pre-Harappan ploughed field at Kalibangan displayed a single set of parallel furrows, with no evidence that the field had been ploughed in two intersecting directions.",
+    "is_true": false,
+    "why": "The field at Kalibangan is notable precisely because it preserved two sets of furrows crossing at right angles. The spacing differed between the two sets, a pattern often interpreted as evidence of a field prepared for more than one crop. The field belongs to the pre-Harappan occupation at the site."
+  },
+  {
+    "statement_id": "ANC-057",
+    "parent_topic": "Ancient History",
+    "text": "Shortugai in present-day Afghanistan represents the northernmost known Harappan settlement in Central Asia; its Harappan-period levels and finds such as lapis-lazuli fragments indicate contacts with the mineral-rich regions of the north-east.",
+    "is_true": true,
+    "why": "Shortugai, in the Takhar region near the Amu Darya-Kokcha area, is identified as a Harappan settlement with strong Indus cultural connections. Excavations found Harappan-period material as well as lapis-lazuli and other craft materials, consistent with its strategic position in exchange networks linking the Indus world with Central Asian resources."
+  },
+  {
+    "statement_id": "ANC-058",
+    "parent_topic": "Ancient History",
+    "text": "Lothal, a Harappan port-town associated with bead manufacture and a tidal basin, stood near the mouth of the Indus in Sindh, rather than in the Gulf of Khambhat region of Gujarat.",
+    "is_true": false,
+    "why": "The geographical location is incorrect. Lothal is in Gujarat, along the Bhogava, a tributary of the Sabarmati, in the Gulf of Khambhat region. Its basin, inlet and outlet channels, marine objects and bead-making evidence have led to its identification as an important Harappan port-town."
+  },
+  {
+    "statement_id": "ANC-059",
+    "parent_topic": "Ancient History",
+    "text": "The Shatapatha Brahmana narrates the eastward movement of Videgha Mathava from the region of the Sarasvati and associates the spread of Vedic ritual culture with the crossing of the Sadanira, generally identified with the Gandak.",
+    "is_true": true,
+    "why": "The narrative of Videgha Mathava and the priest Gotama Rahugana appears in the Shatapatha Brahmana. It describes movement eastward from the Sarasvati and the Sadanira as a boundary not crossed by the ritual fire at first. Historians use the passage cautiously as textual evidence for an eastward horizon of later Vedic culture; it is not a literal archaeological itinerary."
+  },
+  {
+    "statement_id": "ANC-060",
+    "parent_topic": "Ancient History",
+    "text": "The expression Trayi-vidya in early Vedic usage referred to the Rigveda, Samaveda and Atharvaveda, while the Yajurveda was incorporated into the threefold corpus only at a later stage.",
+    "is_true": false,
+    "why": "The traditional threefold Vedic corpus refers to the Rigveda (ṛc), Yajurveda (yajus) and Samaveda (sāman). The Atharvaveda was not one of the three implied by Trayi-vidya in this formulation; it came to be recognised as the fourth Veda."
+  },
+  {
+    "statement_id": "ANC-061",
+    "parent_topic": "Ancient History",
+    "text": "The Samaveda is closely dependent on the Rigveda: most of its verses are drawn especially from the eighth and ninth Mandalas, and its chants were intended for performance by the Udgatr priest at Soma rituals.",
+    "is_true": true,
+    "why": "The Samaveda is primarily a liturgical collection of verses arranged for musical chanting. A large majority of its verses are drawn from the Rigveda, particularly its eighth and ninth Mandalas, and the Udgatr priest was responsible for the chant during Soma sacrifice."
+  },
+  {
+    "statement_id": "ANC-062",
+    "parent_topic": "Ancient History",
+    "text": "Although Painted Grey Ware is concentrated in the upper Ganga-Yamuna region, its principal archaeological association is with the Ahar-Banas Chalcolithic culture of south-eastern Rajasthan.",
+    "is_true": false,
+    "why": "The association with Ahar-Banas is incorrect. Painted Grey Ware is an Iron Age ceramic horizon concentrated particularly in the upper Ganga-Yamuna Doab and adjoining regions. Ahar-Banas is a separate Chalcolithic cultural complex recognised by its characteristic white-painted black-and-red ware."
+  },
+  {
+    "statement_id": "ANC-063",
+    "parent_topic": "Ancient History",
+    "text": "The Vajji was a confederacy rather than a single hereditary monarchy; the Lichchhavis were a prominent constituent group, and Vaishali served as its principal political centre.",
+    "is_true": true,
+    "why": "The Vajji or Vrijji polity is described as a gana-sangha confederacy comprising several clans, among whom the Lichchhavis were particularly influential. Vaishali was its principal centre. It should therefore not be equated simply with a centralised kingdom ruled by one hereditary monarch."
+  },
+  {
+    "statement_id": "ANC-064",
+    "parent_topic": "Ancient History",
+    "text": "The Haryanka ruler Udayin is traditionally credited with shifting the Magadhan capital from Pataliputra back to Rajagriha, reversing the move made by his predecessors.",
+    "is_true": false,
+    "why": "The direction of the shift is reversed. Udayin is traditionally credited with moving the capital from Rajagriha to Pataliputra, whose position at the confluence of important rivers offered strategic and commercial advantages."
+  },
+  {
+    "statement_id": "ANC-065",
+    "parent_topic": "Ancient History",
+    "text": "According to the traditional account, the First Buddhist Council was held at Rajagriha under Ajatashatru's patronage, with Mahakassapa presiding and Ananda and Upali reciting the Dhamma and Vinaya respectively.",
+    "is_true": true,
+    "why": "Buddhist tradition places the First Council at Rajagriha, often associated with the Saptaparni cave, soon after the Buddha's parinirvana. Mahakassapa is described as presiding; Ananda recited the discourses, while Upali recited the monastic discipline. These details belong to the traditional accounts of the council."
+  },
+  {
+    "statement_id": "ANC-066",
+    "parent_topic": "Ancient History",
+    "text": "Makkhali Gosala's Ajivika teaching rejected niyati or determinism and maintained that individual effort and moral action could accelerate the soul's progress towards liberation.",
+    "is_true": false,
+    "why": "The statement reverses the central Ajivika doctrine. Niyati, or an all-governing principle of destiny, was central to Ajivika thought: the course of beings was held to unfold according to a fixed order, not to be accelerated by individual effort. Ajivika teachings are known mainly through accounts preserved by Buddhist, Jain and later sources."
+  },
+  {
+    "statement_id": "ANC-067",
+    "parent_topic": "Ancient History",
+    "text": "Theravada chronicles associate the Second Buddhist Council with Vaishali, approximately a century after the Buddha's parinirvana, and with a dispute over ten practices followed by some Vajji monks.",
+    "is_true": true,
+    "why": "The traditional account places the Second Council at Vaishali and centres it on the Ten Points (dasa vatthuni), practices regarded by the council's elders as contrary to monastic discipline. The dating and some narrative details differ among Buddhist traditions, so the 'approximately a century' chronology should be understood as the traditional Theravada account."
+  },
+  {
+    "statement_id": "ANC-068",
+    "parent_topic": "Ancient History",
+    "text": "The final recension of the Svetambara Jain canon is traditionally associated with a council at Valabhi under Devardhigani Kshamasramana in about the fifth century CE; this was a council organised exclusively by the Digambara community.",
+    "is_true": false,
+    "why": "The error is the sectarian attribution. The Valabhi council and the recension associated with Devardhigani Kshamasramana belong to the traditional history of the Svetambara canon. Digambara tradition does not accept the extant Svetambara Agama collection as its own canonical corpus. The precise chronology of Jain councils is debated, so the date is conventionally qualified as traditional."
+  },
+  {
+    "statement_id": "ANC-069",
+    "parent_topic": "Ancient History",
+    "text": "Umasvati's Tattvartha Sutra is an early Jain philosophical work composed in Sanskrit and is unusual in being respected by both the principal Digambara and Svetambara traditions, despite differences between their recensions and commentarial lineages.",
+    "is_true": true,
+    "why": "The Tattvartha Sutra, attributed to Umasvati or Umasvami, is a foundational Jain philosophical text written in Sanskrit. It presents Jain doctrines in a systematic form and has an important position in both Digambara and Svetambara traditions, although textual recensions and interpretations are not identical."
+  },
+  {
+    "statement_id": "ANC-070",
+    "parent_topic": "Ancient History",
+    "text": "In the Milindapanha, the Indo-Greek king Menander meets the Buddhist sage Nagasena at Taxila, which is presented as the capital of Menander's kingdom.",
+    "is_true": false,
+    "why": "The dialogue is associated with Sagala (commonly identified with Sialkot), not Taxila. The Milindapanha presents Menander, known in Pali as Milinda, debating with Nagasena on Buddhist philosophical questions; Taxila was an important north-western centre but is not the setting specified for this dialogue."
+  },
+  {
+    "statement_id": "ANC-071",
+    "parent_topic": "Ancient History",
+    "text": "The Besnagar pillar inscription identifies Heliodorus, a Greek envoy sent by Antialcidas to the Shunga ruler Bhagabhadra, as a Bhagavata who erected a Garuda-banner in honour of Vasudeva.",
+    "is_true": true,
+    "why": "The inscription records Heliodorus as the son of Dion, an inhabitant of Taxila and a Greek ambassador from King Antialcidas to King Bhagabhadra. It calls him a Bhagavata and identifies the monument as a Garuda-dhvaja dedicated to Vasudeva, providing important evidence for early Bhagavata worship and cross-cultural religious interaction."
+  },
+  {
+    "statement_id": "ANC-072",
+    "parent_topic": "Ancient History",
+    "text": "The Barabar caves in Bihar, although donated to the Ajivikas under the Mauryas, are characterised by rough, unfinished interior surfaces rather than the highly polished rock surfaces associated with Mauryan workmanship.",
+    "is_true": false,
+    "why": "The description of the interiors is incorrect. Several Barabar caves bear Mauryan inscriptions dedicating them to the Ajivikas, and their interiors are famous for exceptionally polished surfaces. The polish is one of the most distinctive technical features of Mauryan rock-cut architecture."
+  },
+  {
+    "statement_id": "ANC-073",
+    "parent_topic": "Ancient History",
+    "text": "The Hathigumpha inscription of Kharavela is engraved at Udayagiri near Bhubaneswar and is composed in Prakrit; it records the ruler's activities in a year-by-year royal narrative.",
+    "is_true": true,
+    "why": "The Hathigumpha record is located in the Udayagiri hills of Odisha, near Bhubaneswar. Its language is Prakrit, and its sequential account of Kharavela's regnal years provides information on campaigns, public works and religious patronage in ancient Kalinga."
+  },
+  {
+    "statement_id": "ANC-074",
+    "parent_topic": "Ancient History",
+    "text": "The Naneghat inscription attributes the two Ashvamedha sacrifices to Queen Naganika alone, performed after the death of her husband Satakarni I, rather than to the royal couple jointly.",
+    "is_true": false,
+    "why": "The attribution is incorrect. The Naneghat record groups the two Ashvamedha sacrifices among those performed jointly by Satakarni I and his queen Naganika. The inscription separately lists sacrifices performed by Naganika after her husband's death; the Ashvamedhas do not belong to that latter group."
+  },
+  {
+    "statement_id": "ANC-075",
+    "parent_topic": "Ancient History",
+    "text": "Rudradaman's Junagadh inscription, dated to Saka year 72 (about 150 CE), records the restoration of the Sudarshana lake dam by his minister Suvisakha; it also traces the earlier lake works to Pushyagupta under Chandragupta Maurya and to the Yavana official Tushaspha under Ashoka.",
+    "is_true": true,
+    "why": "The Junagadh inscription is an important Sanskrit record of Rudradaman's reign. It states that the Sudarshana lake was originally constructed under Chandragupta Maurya by his governor Pushyagupta, later provided with channels under Ashoka by the Yavana Tushaspha, and repaired after storm damage under Rudradaman by the minister Suvisakha."
+  },
+  {
+    "statement_id": "ANC-076",
+    "parent_topic": "Ancient History",
+    "text": "The Nasik inscription of Gautami Balashri praises Gautamiputra Satakarni for defeating the Sakas and Yavanas but deliberately omits the Pahlavas from its list of adversaries.",
+    "is_true": false,
+    "why": "The omission is the error. The Nasik eulogy of Gautamiputra Satakarni, issued by his mother Gautami Balashri, includes the Sakas, Yavanas and Pahlavas among the groups over whom he claimed victory. The record is a major source for Satavahana political history and royal titulature."
+  },
+  {
+    "statement_id": "ANC-077",
+    "parent_topic": "Ancient History",
+    "text": "At Dhauli and Jaugada in Kalinga, Ashoka's inscriptional programme includes two Separate Kalinga Edicts in place of the standard Major Rock Edicts XI–XIII found at other major rock-edict sites.",
+    "is_true": true,
+    "why": "Dhauli and Jaugada have special Kalinga edicts adapted to the administration of the conquered province. The usual Major Rock Edicts XI, XII and XIII are not reproduced there in their standard form; the Separate Edicts address officials and the treatment of the population in Kalinga."
+  },
+  {
+    "statement_id": "ANC-078",
+    "parent_topic": "Ancient History",
+    "text": "The Maski Minor Rock Edict is notable because, unlike the other relevant inscriptions of Ashoka, it does not use the ruler's personal name and refers to him only as Devanampiya Piyadasi.",
+    "is_true": false,
+    "why": "The statement reverses the significance of Maski. The Maski Minor Rock Edict is particularly important because it includes the name 'Asoka' alongside the royal epithet Devanampiya, helping to establish the identification of Devanampiya Piyadasi with Ashoka."
+  },
+  {
+    "statement_id": "ANC-079",
+    "parent_topic": "Ancient History",
+    "text": "The Gupta era began in 78 CE under Chandragupta I and marked the beginning of the Saka era, which was used by later Western Kshatrapa rulers.",
+    "is_true": false,
+    "why": "The statement confuses two eras. The Saka era is conventionally dated to 78 CE. The Gupta era began around 319–320 CE and is commonly associated with the accession of Chandragupta I. Later Western Kshatrapa records frequently used the Saka era."
+  },
+  {
+    "statement_id": "ANC-080",
+    "parent_topic": "Ancient History",
+    "text": "The Prayaga Prashasti of Samudragupta was composed by his court poet and minister Harisena and engraved on a pillar that also carries inscriptions of Ashoka and Jahangir.",
+    "is_true": true,
+    "why": "The Allahabad or Prayaga pillar carries inscriptions from the Mauryan, Gupta and Mughal periods. Samudragupta's Sanskrit prashasti was composed by Harisena, who held important court offices. It is a major source for the Gupta ruler's genealogy, campaigns and relations with neighbouring powers."
+  },
+  {
+    "statement_id": "ANC-081",
+    "parent_topic": "Ancient History",
+    "text": "The Chinese Buddhist pilgrim Faxian visited India during the reign of Chandragupta II, with the collection of Buddhist Vinaya texts among the principal aims of his journey.",
+    "is_true": true,
+    "why": "Faxian (Fa-Hien) travelled through India in the early fifth century CE, during the reign of Chandragupta II. His account describes Buddhist sites, monasteries and aspects of society, while his stated religious purpose included obtaining authoritative copies of the Vinaya, the monastic disciplinary texts."
+  },
+  {
+    "statement_id": "ANC-082",
+    "parent_topic": "Ancient History",
+    "text": "The Udayagiri cave complex associated with Chandragupta II and its celebrated Varaha relief is situated near Bhubaneswar in Odisha, close to the Hathigumpha caves of Kharavela.",
+    "is_true": false,
+    "why": "This confuses two different Udayagiri complexes. The Varaha relief and Gupta-period caves associated with Chandragupta II are at Udayagiri near Vidisha in Madhya Pradesh. The Udayagiri hills near Bhubaneswar in Odisha are associated with Kharavela and the Hathigumpha inscription."
+  },
+  {
+    "statement_id": "ANC-083",
+    "parent_topic": "Ancient History",
+    "text": "Aryabhata composed the Aryabhatiya in 499 CE; among its astronomical positions are the rotation of the Earth on its axis and the explanation of eclipses through the shadows of the Earth and Moon.",
+    "is_true": true,
+    "why": "The Aryabhatiya is conventionally dated to 499 CE. Aryabhata explained the apparent daily movement of the heavens through the Earth's rotation and gave geometrical explanations of solar and lunar eclipses involving shadows, rather than relying on the mythological swallowing of the luminaries."
+  },
+  {
+    "statement_id": "ANC-084",
+    "parent_topic": "Ancient History",
+    "text": "Varahamihira's Brihat-Samhita is the work that summarises five earlier astronomical systems, whereas his Panchasiddhantika is an encyclopaedia dealing with architecture, rainfall, omens and other subjects.",
+    "is_true": false,
+    "why": "The two titles have been interchanged. The Panchasiddhantika summarises five astronomical systems—Surya, Romaka, Paulisa, Vasishtha and Paitamaha—while the Brihat-Samhita is Varahamihira's wide-ranging encyclopaedic work covering topics such as astronomy, astrology, architecture, weather and omens."
+  },
+  {
+    "statement_id": "ANC-085",
+    "parent_topic": "Ancient History",
+    "text": "The Dashavatara temple at Deogarh is a Gupta-period temple dedicated to Vishnu and is commonly cited as an early example of the Panchayatana arrangement in north Indian temple architecture.",
+    "is_true": true,
+    "why": "The Dashavatara temple at Deogarh in present-day Uttar Pradesh is an important early stone temple of the Gupta period. Its reliefs are associated with Vaishnava themes, and its surviving plan is commonly discussed as an early Panchayatana-style temple, with a central shrine and subsidiary shrines at the corners of the platform."
+  },
+  {
+    "statement_id": "ANC-086",
+    "parent_topic": "Ancient History",
+    "text": "The Harshacharita, a Sanskrit prose biography of Harsha, was composed by the court poet Bhavabhuti rather than by Banabhatta.",
+    "is_true": false,
+    "why": "The author is wrong. Harshacharita was composed by Banabhatta, a court poet of Harsha. Bhavabhuti was a later Sanskrit dramatist known for works such as Malatimadhava, Mahaviracharita and Uttararamacharita."
+  },
+  {
+    "statement_id": "ANC-087",
+    "parent_topic": "Ancient History",
+    "text": "The Aihole inscription of Pulakeshin II, dated to Saka year 556 (634 CE), was composed by Ravikirti and celebrates the Chalukya ruler's achievements, including his resistance to Harsha.",
+    "is_true": true,
+    "why": "The Sanskrit inscription at the Meguti Jain temple in Aihole is dated to Saka 556, corresponding to 634–35 CE. Its composer Ravikirti eulogises Pulakeshin II and records the ruler's northern campaign, including the claim that Harsha's advance was checked."
+  },
+  {
+    "statement_id": "ANC-088",
+    "parent_topic": "Ancient History",
+    "text": "After checking Harsha's advance, Pulakeshin II captured Kanchipuram and permanently extinguished Pallava political power in the Tamil region.",
+    "is_true": false,
+    "why": "Pulakeshin II did not permanently extinguish the Pallavas or capture Kanchipuram. The Pallava ruler Narasimhavarman I later defeated Pulakeshin II and captured Vatapi, the Chalukya capital. The Aihole inscription's account of Pulakeshin's success against Harsha should not be confused with the later Chalukya-Pallava conflict."
+  },
+  {
+    "statement_id": "ANC-089",
+    "parent_topic": "Ancient History",
+    "text": "The Five Rathas at Mamallapuram are monolithic rock-cut monuments associated with the reign of the Pallava ruler Narasimhavarman I, whose title Mamalla gave the town its name.",
+    "is_true": true,
+    "why": "Mamallapuram is named after Narasimhavarman I, who bore the title Mamalla. The Five Rathas are among the best-known monuments associated with his reign and were carved from single rock masses; their names derive from the Pandavas, although the structures are not literal representations of the epic's chariots."
+  },
+  {
+    "statement_id": "ANC-090",
+    "parent_topic": "Ancient History",
+    "text": "The Shore Temple at Mamallapuram is generally attributed to Narasimhavarman I Mamalla, the same ruler associated with the Five Rathas.",
+    "is_true": false,
+    "why": "The Shore Temple is generally attributed to the Pallava ruler Narasimhavarman II, known as Rajasimha, rather than Narasimhavarman I Mamalla. The Five Rathas and the Shore Temple therefore belong to different phases of Pallava architectural activity."
+  },
+  {
+    "statement_id": "ANC-091",
+    "parent_topic": "Ancient History",
+    "text": "The Tolkappiyam is the oldest extant Tamil grammatical work and is organised into three major divisions, of which the Porulatikaram discusses subject matter including the distinction between akam and puram.",
+    "is_true": true,
+    "why": "The Tolkappiyam is the earliest extant Tamil grammatical treatise. Its three divisions are conventionally identified as Ezhuttatikaram, Sollatikaram and Porulatikaram. The last deals with subject matter and poetic conventions, including akam (interior or love themes) and puram (public themes such as war, kingship and generosity). Its exact date remains debated."
+  },
+  {
+    "statement_id": "ANC-092",
+    "parent_topic": "Ancient History",
+    "text": "The Ettuthokai is the collection of Ten Idylls, while the Pattuppattu is the group of Eight Anthologies in the classical Tamil corpus.",
+    "is_true": false,
+    "why": "The titles and numbers are reversed. Ettuthokai means the Eight Anthologies, while Pattuppattu means the Ten Idylls or Ten Songs. Both are major groupings within the early classical Tamil literary corpus."
+  },
+  {
+    "statement_id": "ANC-093",
+    "parent_topic": "Ancient History",
+    "text": "Silappadikaram is attributed to Ilango Adigal, while Manimekalai, a sequel centred on the daughter of Kovalan and Madhavi and strongly associated with Buddhist teaching, is attributed to Sittalai Sattanar.",
+    "is_true": true,
+    "why": "Silappadikaram is traditionally attributed to Ilango Adigal. Manimekalai, attributed to Sittalai Sattanar, continues the story through Manimekalai, the daughter of Kovalan and Madhavi, and gives a prominent place to Buddhist ideas and institutions. Together the epics provide valuable evidence for the society and religious life represented in classical Tamil literature."
+  },
+  {
+    "statement_id": "ANC-094",
+    "parent_topic": "Ancient History",
+    "text": "Arikamedu, where excavations have yielded Roman amphorae and other evidence of long-distance exchange, was situated at the estuary of the Vaigai near Madurai.",
+    "is_true": false,
+    "why": "The location is incorrect. Arikamedu lies near present-day Puducherry, on the Ariyankuppam river. Its excavated remains include amphorae and other imported or Mediterranean-associated materials, alongside local pottery and craft evidence, making it important for studying Indo-Roman and wider Indian Ocean trade."
+  },
+  {
+    "statement_id": "ANC-095",
+    "parent_topic": "Ancient History",
+    "text": "In broad material terms, Gandhara sculpture frequently used grey schist, Mathura sculpture is associated with red sandstone, and the Amaravati school made extensive use of pale limestone for its reliefs.",
+    "is_true": true,
+    "why": "These materials help distinguish three major sculptural traditions. Gandhara works commonly used grey schist and show strong Hellenistic-Roman stylistic influences; Mathura sculpture is closely associated with red mottled sandstone; and Amaravati's narrative reliefs were carved largely in pale limestone. The distinctions are useful but should not be treated as absolute rules for every surviving object."
+  },
+  {
+    "statement_id": "ANC-096",
+    "parent_topic": "Ancient History",
+    "text": "The inscription in Ajanta Cave 16 states that Vakataka king Harisena personally donated the cave to the Buddhist Sangha, while his minister Varahadeva merely supervised the excavation on the king's behalf.",
+    "is_true": false,
+    "why": "The donor is misidentified. The Cave 16 inscription records the donation by Varahadeva, a minister of the Vakataka king Harisena, to the Buddhist monastic community. The inscription is valuable because it connects a named minister, the Vakataka court and a major phase of Ajanta's late fifth-century activity."
+  },
+  {
+    "statement_id": "ANC-097",
+    "parent_topic": "Ancient History",
+    "text": "The Bhitargaon temple near Kanpur is a Gupta-period brick Hindu shrine, notable for its terracotta panels and high pyramidal superstructure.",
+    "is_true": true,
+    "why": "Bhitargaon is an important surviving brick temple of the Gupta period, generally dated to the sixth century CE. Its terracotta panels and tall pyramidal superstructure make it a significant example of early structural temple architecture using fired brick rather than the more frequently discussed stone construction."
+  },
+  {
+    "statement_id": "ANC-098",
+    "parent_topic": "Ancient History",
+    "text": "The Charaka Samhita is primarily a treatise on surgery, whereas the Sushruta Samhita is chiefly concerned with internal medicine, diagnosis and the management of disease through medical treatment.",
+    "is_true": false,
+    "why": "The principal emphasis has been reversed. The Charaka Samhita is especially associated with internal medicine and the theory and practice of healing, while the Sushruta Samhita is particularly renowned for surgery, surgical instruments and operative procedures. Both are foundational works in the history of Ayurveda and contain broader medical material."
+  },
+  {
+    "statement_id": "ANC-099",
+    "parent_topic": "Ancient History",
+    "text": "The Halmidi inscription from Karnataka is widely regarded as the earliest substantial or full-length inscription in Kannada, and is important evidence for the early epigraphic use of the language.",
+    "is_true": true,
+    "why": "The Halmidi inscription, generally dated to the fifth or sixth century CE, is widely cited as the earliest substantial Kannada inscription. It is an important marker in the history of Kannada language and epigraphy, though claims about the absolute earliest Kannada words or shorter inscriptions require separate qualification."
+  },
+  {
+    "statement_id": "ANC-100",
+    "parent_topic": "Ancient History",
+    "text": "The conventional dynastic emblems of the early Cheras, Cholas and Pandyas were respectively the tiger, fish and bow, as reflected in the literary and numismatic traditions of the Tamil region.",
+    "is_true": false,
+    "why": "The emblems have been interchanged. The Chera emblem was the bow, the Chola emblem was the tiger, and the Pandya emblem was the fish. The statement assigns the tiger to the Cheras, the fish to the Cholas and the bow to the Pandyas, so the entire sequence is incorrect."
+  }
+]
